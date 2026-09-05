@@ -62,3 +62,61 @@ nav {
   background-color: var(--primary-blue-color);
   cursor: pointer;
 }
+
+/* ========================================================================
+
+                                  Card
+
+=========================================================================*/
+
+.card-counter {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 2.75rem;
+  background-color: lightblue;
+  margin: 1rem auto 0;
+}
+
+.main-card {
+  display: flex;
+  height: 22rem;
+  width: 35rem;
+  background-color: beige;
+  margin: 1.75rem auto 0;
+  padding: 1.25rem;
+  border-radius: 1.5rem;
+}
+
+.top-button-sign {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.voice-sign,
+.repeat-sign {
+  height: 2.25rem;
+  width: 2.25rem;
+  border-radius: 0.5rem;
+}
+
+.words-btn-container {
+  display: flex;
+  flex-direction: row;
+  background-color: blueviolet;
+}
+
+.test-word-container {
+  display: block;
+  font-size: 5rem;
+  max-width: 10rem;
+}
+
+.test-translation {
+  display: block;
+}
+
+.flip-card-btn {
+  display: block;
+}
