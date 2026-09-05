@@ -17,3 +17,16 @@
 body {
   background: white;
 }
+
+/* ========================================================================
+
+                                Header/nav
+
+=========================================================================*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  background-color: lightpink;
+}
