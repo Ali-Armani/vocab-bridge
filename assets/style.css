@@ -120,3 +120,19 @@ nav {
 .flip-card-btn {
   display: block;
 }
+
+/* ========================================================================
+
+                            Previous/Next Buttons
+
+=========================================================================*/
+
+.previous-next-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-btn {
+  display: inline-block;
+  margin: 1rem auto 0;
+}
