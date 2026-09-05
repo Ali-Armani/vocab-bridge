@@ -30,3 +30,35 @@ nav {
   height: 4rem;
   background-color: lightpink;
 }
+
+/* ========================================================================
+
+                                Top Container
+
+=========================================================================*/
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skip-button {
+  display: block;
+  background-color: white;
+  height: 2.75rem;
+  width: 8.5rem;
+  border-radius: 0.75rem;
+  border-color: var(--primary-blue-color);
+  color: var(--primary-blue-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  transition: color 0.25s ease, background-color 0.25s ease;
+}
+
+.skip-button:hover {
+  color: white;
+  background-color: var(--primary-blue-color);
+  cursor: pointer;
+}
