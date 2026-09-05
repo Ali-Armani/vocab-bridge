@@ -18,6 +18,24 @@ body {
   background: white;
 }
 
+button {
+  background-color: white;
+  height: 2.75rem;
+  width: 8.5rem;
+  border-radius: 0.75rem;
+  border-color: var(--primary-blue-color);
+  color: var(--primary-blue-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.25s ease, background-color 0.25s ease;
+}
+
+button:hover {
+  color: white;
+  background-color: var(--primary-blue-color);
+  cursor: pointer;
+}
+
 /* ========================================================================
 
                                 Header/nav
@@ -28,7 +46,9 @@ nav {
   display: flex;
   justify-content: space-between;
   height: 4rem;
-  background-color: lightpink;
+  border: 1px solid rgb(231, 231, 231);
+  padding: 1.5rem;
+  box-shadow: 0 1px 14px rgba(0,0,0,0.075);
 }
 
 /* ========================================================================
@@ -44,38 +64,23 @@ nav {
 
 .skip-button {
   display: block;
-  background-color: white;
-  height: 2.75rem;
-  width: 8.5rem;
-  border-radius: 0.75rem;
-  border-color: var(--primary-blue-color);
-  color: var(--primary-blue-color);
-  font-weight: 600;
-  font-size: 0.95rem;
   margin-top: 0.5rem;
   margin-left: 1rem;
-  transition: color 0.25s ease, background-color 0.25s ease;
-}
-
-.skip-button:hover {
-  color: white;
-  background-color: var(--primary-blue-color);
-  cursor: pointer;
 }
 
 /* ========================================================================
 
-                                  Card
+                            Card Counter & Main Card
 
 =========================================================================*/
 
+/* Card Counter */
 .card-counter {
   display: block;
   justify-content: center;
   align-items: center;
   width: 30rem;
   height: 2.75rem;
-  background-color: lightblue;
   margin: 1rem auto 0;
 }
 
@@ -83,10 +88,11 @@ nav {
   display: flex;
   height: 22rem;
   width: 35rem;
-  background-color: beige;
-  margin: 1.75rem auto 0;
+  margin: 0.75rem auto 0;
   padding: 1.25rem;
   border-radius: 1.5rem;
+  border: 1px solid rgb(231, 231, 231);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.185);
 }
 
 .top-button-sign {
@@ -102,23 +108,29 @@ nav {
 }
 
 .words-btn-container {
-  display: flex;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 0;
   flex-direction: row;
-  background-color: blueviolet;
 }
 
 .test-word-container {
   display: block;
   font-size: 5rem;
   max-width: 10rem;
+  margin: 0 auto 0;
 }
 
 .test-translation {
   display: block;
+  font-size: 2.2rem;
+  margin: 0 auto 0;
 }
 
 .flip-card-btn {
   display: block;
+  margin: 0 auto 0;
 }
 
 /* ========================================================================
