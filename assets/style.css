@@ -136,3 +136,46 @@ nav {
   display: inline-block;
   margin: 1rem auto 0;
 }
+
+/* ========================================================================
+
+                                Result Card
+
+=========================================================================*/
+
+.result-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40rem;
+  height: 4rem;
+  margin: 1rem auto 0;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(231, 231, 231);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.185);
+}
+
+.correct-div,
+.wrong-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.75rem;
+  width: 8.5rem;
+  border-radius: 0.75rem;
+  border-color: var(--primary-blue-color);
+  color: var(--primary-blue-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.correct-div {
+  color: rgb(21, 153, 21);
+  background-color: rgb(219, 255, 219);
+}
+
+.wrong-div {
+  color: rgb(203, 38, 38);
+  background-color: rgb(253, 221, 221);
+}
