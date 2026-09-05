@@ -16,6 +16,13 @@
 
 body {
   background: white;
+  position: relative;
+  height: 100vh;
+  height: 100dvh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
 }
 
 button {
@@ -80,15 +87,15 @@ nav {
   justify-content: center;
   align-items: center;
   width: 30rem;
-  height: 2.75rem;
-  margin: 1rem auto 0;
+  height: 2rem;
+  margin: 0.5rem auto 0;
 }
 
 .main-card {
   display: flex;
   height: 22rem;
   width: 35rem;
-  margin: 0.75rem auto 0;
+  margin: 0.5rem auto 0;
   padding: 1.25rem;
   border-radius: 1.5rem;
   border: 1px solid rgb(231, 231, 231);
@@ -161,7 +168,7 @@ nav {
   align-items: center;
   width: 40rem;
   height: 4rem;
-  margin: 1rem auto 0;
+  margin: 0.75rem auto 0;
   padding: 1.5rem;
   border-radius: 0.75rem;
   border: 1px solid rgb(231, 231, 231);
