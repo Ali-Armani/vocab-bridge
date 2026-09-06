@@ -49,6 +49,19 @@ button:hover {
 
 =========================================================================*/
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  color: var(--primary-blue-color);
+  font-size: 1.05rem;
+}
+
+.vocab-bridge-logo {
+  max-width: 4.5rem;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
