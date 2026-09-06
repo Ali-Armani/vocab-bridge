@@ -43,6 +43,12 @@ button:hover {
   cursor: pointer;
 }
 
+button:focus-visible,
+a:focus-visible {
+  outilne: 2px solid var(--primary-blue-color);
+  outline-offset: 2px;
+}
+
 /* ========================================================================
 
                                 Header/nav
