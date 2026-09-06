@@ -237,9 +237,9 @@ footer {
   align-items: center;
   padding: 1.4rem;
   gap: 1.5rem;
-  box-shadow: 0 1px 14px rgba(0,0,0,0.075);
   border: 1px solid rgb(226, 226, 226);
   margin-top: 1.5rem;
+  transform: translateY(3.5rem);
 }
 
 /* ========================================================================
