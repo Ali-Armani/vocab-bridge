@@ -30,7 +30,7 @@ button {
   height: 2.75rem;
   width: 8.5rem;
   border-radius: 0.75rem;
-  border-color: var(--primary-blue-color);
+  border: 1.5px solid var(--primary-blue-color);
   color: var(--primary-blue-color);
   font-weight: 600;
   font-size: 0.95rem;
