@@ -233,13 +233,14 @@ nav {
 
 footer {
   display: flex;
+  position: absolute;
+  bottom: 0;
   justify-content: center;
   align-items: center;
+  width: 100%;
   padding: 1.4rem;
   gap: 1.5rem;
   border: 1px solid rgb(226, 226, 226);
-  margin-top: 1.5rem;
-  transform: translateY(3.5rem);
 }
 
 /* ========================================================================
