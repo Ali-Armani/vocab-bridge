@@ -82,10 +82,17 @@ nav {
   justify-content: space-between;
 }
 
-.skip-button {
-  display: block;
-  margin-top: 0.5rem;
-  margin-left: 1rem;
+.skip-link {
+  position: absolute;
+  top: -3rem;
+  left: 0.5rem;
+  background: white;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0.5rem;
 }
 
 /* ========================================================================
