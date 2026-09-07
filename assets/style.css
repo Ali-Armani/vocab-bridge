@@ -83,22 +83,11 @@ nav {
   gap: 0.75rem;
 }
 
-header {
-  width: 100%;
-  position: absolute;
-  top: 0;
-}
-
 /* ========================================================================
 
                                 Top Container
 
 =========================================================================*/
-
-.top-container {
-  display: flex;
-  justify-content: space-between;
-}
 
 .skip-link {
   position: absolute;
@@ -263,14 +252,6 @@ header {
     display: flex;
     justify-content: center;
     gap: 1.2rem;
-}
-
-.footer-bottom-row {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
 .footer-icon-link {
