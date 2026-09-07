@@ -73,7 +73,8 @@ a:focus-visible {
   max-width: 4.5rem;
 }
 
-nav {
+/* Site header */
+.site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,6 +82,46 @@ nav {
   padding: 0.75rem 1.5rem;
   flex-wrap: wrap;
   gap: 0.75rem;
+}
+
+.header-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.language-switch,
+.day-night-toggle {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-switch img,
+.day-night-toggle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Top progress bar */
+.progress-track {
+  width: 90%;
+  max-width: 40rem;
+  height: 0.5rem;
+  background: rgb(231, 231, 231);
+  border-radius: 999px;
+  margin: 0.5rem auto 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: rgb(21, 153, 21);
+  transition: width 0.3s ease;
 }
 
 /* ========================================================================
@@ -119,16 +160,46 @@ nav {
   margin: 0.5rem auto 0;
 }
 
+/* Flip card container */
 .main-card {
-  display: flex;
   height: 22rem;
   width: 35rem;
   max-width: 90vw;
   margin: 0.5rem auto 0;
+  perspective: 1200px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   padding: 1.25rem;
+  backface-visibility: hidden;
   border-radius: 1.5rem;
   border: 1px solid rgb(231, 231, 231);
   box-shadow: 0 10px 30px rgba(0,0,0,0.185);
+  background: white;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  text-align: center;
 }
 
 .top-button-sign {
@@ -166,6 +237,27 @@ nav {
 .flip-card-btn {
   display: block;
   margin: 0 auto 0;
+}
+
+/* Back face content */
+.example-list {
+  list-style: none;
+  font-size: 1rem;
+  color: rgb(90, 90, 90);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.answer-buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.answer-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 /* ========================================================================
@@ -227,6 +319,41 @@ nav {
 .wrong-div {
   color: rgb(203, 38, 38);
   background-color: rgb(253, 221, 221);
+}
+
+/* Donut chart */
+.progress-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.donut-chart {
+  width: 3.5rem;
+  height: 3.5rem;
+  transform: rotate(-90deg);
+}
+
+.donut-bg {
+  fill: none;
+  stroke: rgb(231, 231, 231);
+  stroke-width: 3;
+}
+
+.donut-correct,
+.donut-wrong {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.donut-correct {
+  stroke: rgb(21, 153, 21);
+}
+
+.donut-wrong {
+  stroke: rgb(203, 38, 38);
 }
 
 /* ========================================================================
@@ -298,4 +425,31 @@ nav {
     width: 100%;
     padding: 1rem;
   }
+}
+
+/* ========================================================================
+
+                                  Dark Mode
+
+=========================================================================*/
+
+[data-theme="dark"] body {
+  background: #111827;
+  color: #f3f4f6;
+}
+
+[data-theme="dark"] .card-face {
+  background: #1f2937;
+  border-color: #374151;
+  color: #f3f4f6;
+}
+
+[data-theme="dark"] .result-card {
+  background: #1f2937;
+  border-color: #374151;
+  color: #f3f4f6;
+}
+
+[data-theme="dark"] .main-footer {
+  border-top-color: rgba(255, 255, 255, 0.15);
 }
