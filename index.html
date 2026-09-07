@@ -13,197 +13,226 @@
   <a href="#main-content" class="skip-link">Skip to Content</a>
 
   <header class="site-header">
-    <div class="logo-container">
+  <div class="logo-container">
+    <img
+      src="assets/images/vocab-bridge-logo.jpg"
+      alt="Vocab Bridge"
+      class="vocab-bridge-logo"
+    >
+
+    <p>
+      <strong>Vocab Bridge</strong><br>
+      Learn English
+    </p>
+  </div>
+
+  <div class="header-actions">
+    <button
+      type="button"
+      class="language-switch"
+      aria-label="Change language"
+    >
       <img
-        src="assets/images/vocab-bridge-logo.jpg"
-        alt="Vocab Bridge"
-        class="vocab-bridge-logo"
+        src="assets/images/language-switch.jpg"
+        alt=""
+        aria-hidden="true"
       >
-  
-      <p>
-        <strong>Vocab Bridge</strong><br>
-        Learn English
-      </p>
-    </div>
-  
-    <div class="header-actions">
-      <button
-        type="button"
-        class="language-switch"
-        aria-label="Change language"
+    </button>
+
+    <button
+      type="button"
+      class="day-night-toggle"
+      aria-label="Toggle dark and light mode"
+    >
+      <img
+        src="assets/images/day-night-toggle.jpg"
+        alt=""
+        aria-hidden="true"
       >
-        <img
-          src="assets/images/language-switch.jpg"
-          alt=""
-          aria-hidden="true"
-        >
-      </button>
-  
-      <button
-        type="button"
-        class="day-night-toggle"
-        aria-label="Toggle dark and light mode"
-      >
-        <img
-          src="assets/images/day-night-toggle.jpg"
-          alt=""
-          aria-hidden="true"
-        >
-      </button>
-    </div>
-  </header>
+    </button>
+  </div>
+</header>
 
-  <main id="main-content">
+<div class="progress-track" role="presentation">
+  <div class="progress-fill" id="progressFill"></div>
+</div>
 
-    <div class="card-counter" aria-live="polite">
-      <p>Card 3 of 20</p>
-    </div>
+<main id="main-content">
 
-    <div class="main-card">
+  <div class="card-counter" aria-live="polite">
+    <p>Card 1 of 5</p>
+  </div>
 
-      <div class="top-button-sign">
+  <div class="main-card">
+    <div class="card-inner" id="cardInner">
 
-        <div>
-          <button
-            type="button"
-            class="voice-sign"
-            aria-label="Play pronunciation"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              focusable="false"
+      <!-- Front face -->
+      <div class="card-face card-front">
+        <div class="top-button-sign">
+
+          <div>
+            <button
+              type="button"
+              class="voice-sign"
+              aria-label="Play pronunciation"
             >
-              <path
-                d="M11 5 6 9H3v6h3l5 4V5Z"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M15 9.5a4 4 0 0 1 0 5"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-              <path
-                d="M18 7a7 7 0 0 1 0 10"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-            </svg>
-          </button>
-        </div>
-      
-        <div>
-          <button
-            type="button"
-            class="repeat-sign"
-            aria-label="Repeat pronunciation"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <path
-                d="M17 2l4 4-4 4"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M3 11V9a3 3 0 0 1 3-3h15"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M7 22l-4-4 4-4"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M21 13v2a3 3 0 0 1-3 3H3"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-      
-      </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M11 5 6 9H3v6h3l5 4V5Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15 9.5a4 4 0 0 1 0 5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M18 7a7 7 0 0 1 0 10"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
 
-      <div class="words-btn-container">
-        <div class="test-word-container">
-          <p class="test-word">friend</p>
+          <div>
+            <button
+              type="button"
+              class="repeat-sign"
+              aria-label="Repeat pronunciation"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M17 2l4 4-4 4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3 11V9a3 3 0 0 1 3-3h15"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7 22l-4-4 4-4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21 13v2a3 3 0 0 1-3 3H3"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+
         </div>
-        <div class="test-translation">
-          <p lang="fa" dir="rtl">دوست</p>
-        </div>
-        <div>
+
+        <div class="words-btn-container">
+          <div class="test-word-container">
+            <p class="test-word" id="testWord">friend</p>
+          </div>
           <button
             type="button"
             class="flip-card-btn"
+            id="flipBtn"
             aria-label="Flip flashcard"
           >
             Flip Card
           </button>
         </div>
       </div>
+
+      <!-- Back face -->
+      <div class="card-face card-back">
+        <p class="test-word" id="testWordBack">friend</p>
+        <p class="test-translation" lang="fa" dir="rtl" id="testTranslation">دوست</p>
+        <ul class="example-list" id="exampleList">
+          <li>You are my best friend.</li>
+          <li>She made a new friend at school.</li>
+        </ul>
+        <div class="answer-buttons">
+          <button type="button" class="answer-btn correct-btn" id="correctBtn">
+            I knew it ✓
+          </button>
+          <button type="button" class="answer-btn wrong-btn" id="wrongBtn">
+            I didn't know ✗
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="previous-next-btn">
+    <button type="button" class="order-btn">
+      <span aria-hidden="true">←</span>
+      <span>Previous</span>
+    </button>
+
+    <button type="button" class="order-btn">
+      <span>Next</span>
+      <span aria-hidden="true">→</span>
+    </button>
+  </div>
+
+  <section class="result-card" aria-label="Learning progress" aria-live="polite">
+    <div class="correct-div">
+      <p>
+        <span aria-hidden="true">✓</span>
+        <span id="correctCount">Correct: 0</span>
+      </p>
     </div>
 
-    <div class="previous-next-btn">
-      <button type="button" class="order-btn">
-        <span aria-hidden="true">←</span>
-        <span>Previous</span>
-      </button>
-    
-      <button type="button" class="order-btn">
-        <span>Next</span>
-        <span aria-hidden="true">→</span>
-      </button>
+    <div class="wrong-div">
+      <p>
+        <span aria-hidden="true">✗</span>
+        <span id="wrongCount">Wrong: 0</span>
+      </p>
     </div>
 
-    <section class="result-card" aria-label="Learning progress">
-      <div class="correct-div">
-        <p>
-          <span aria-hidden="true">✓</span>
-          <span>Correct: 15</span>
-        </p>
-      </div>
-    
-      <div class="wrong-div">
-        <p>
-          <span aria-hidden="true">✗</span>
-          <span>Wrong: 5</span>
-        </p>
-      </div>
-    
-      <div class="progress-summary">
-        <p>Overall Progress</p>
-      </div>
-    </section>
-    
-  </main>
+    <div class="progress-summary">
+      <svg viewBox="0 0 36 36" class="donut-chart" aria-hidden="true">
+        <circle class="donut-bg" cx="18" cy="18" r="15.9155" />
+        <circle class="donut-correct" id="donutCorrect" cx="18" cy="18" r="15.9155" />
+        <circle class="donut-wrong" id="donutWrong" cx="18" cy="18" r="15.9155" />
+      </svg>
+      <p>Overall Progress</p>
+    </div>
+  </section>
 
+</main>
+  
   <footer class="main-footer">
     <div class="footer-social">
         <a href="mailto:armani.ali@proton.me" class="footer-icon-link" aria-label="Email">
