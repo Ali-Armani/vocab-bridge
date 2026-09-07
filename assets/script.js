@@ -1,3 +1,155 @@
+// ---------- Vocabulary data ----------
+const vocabList = [
+  { en: "friend", fa: "دوست", examples: ["You are my best friend.", "She made a new friend at school."] },
+  { en: "journey", fa: "سفر", examples: ["Our journey took three days.", "Life is a journey, not a destination."] },
+  { en: "brave", fa: "شجاع", examples: ["The firefighter was very brave.", "It was a brave decision to speak up."] },
+  { en: "wisdom", fa: "خرد", examples: ["With age comes wisdom.", "Her wisdom helped the whole team."] },
+  { en: "harvest", fa: "برداشت محصول", examples: ["Farmers celebrate the harvest every autumn.", "The harvest was rich this year."] }
+];
+
+// ---------- App state ----------
+let currentIndex = 0;
+let correctCount = 0;
+let wrongCount = 0;
+const answeredCards = new Set();
+
+// ---------- DOM references ----------
+const cardInner = document.getElementById("cardInner");
+const testWordFront = document.getElementById("testWord");
+const testWordBack = document.getElementById("testWordBack");
+const testTranslation = document.getElementById("testTranslation");
+const exampleList = document.getElementById("exampleList");
+const flipBtn = document.getElementById("flipBtn");
+const voiceBtn = document.querySelector(".voice-sign");
+const repeatBtn = document.querySelector(".repeat-sign");
+const [prevBtn, nextBtn] = document.querySelectorAll(".order-btn");
+const cardCounter = document.querySelector(".card-counter p");
+const correctCountEl = document.getElementById("correctCount");
+const wrongCountEl = document.getElementById("wrongCount");
+const correctBtn = document.getElementById("correctBtn");
+const wrongBtn = document.getElementById("wrongBtn");
+const progressFill = document.getElementById("progressFill");
+const donutCorrect = document.getElementById("donutCorrect");
+const donutWrong = document.getElementById("donutWrong");
+const themeToggleBtn = document.querySelector(".day-night-toggle");
+
+// ---------- Render current card ----------
+function renderCard() {
+  const word = vocabList[currentIndex];
+
+  testWordFront.textContent = word.en;
+  testWordBack.textContent = word.en;
+  testTranslation.textContent = word.fa;
+
+  exampleList.innerHTML = "";
+  word.examples.forEach((sentence) => {
+    const li = document.createElement("li");
+    li.textContent = sentence;
+    exampleList.appendChild(li);
+  });
+
+  cardCounter.textContent = `Card ${currentIndex + 1} of ${vocabList.length}`;
+  cardInner.classList.remove("is-flipped");
+
+  const alreadyAnswered = answeredCards.has(currentIndex);
+  correctBtn.disabled = alreadyAnswered;
+  wrongBtn.disabled = alreadyAnswered;
+
+  updateProgressBar();
+}
+
+// ---------- Progress bar ----------
+function updateProgressBar() {
+  const percent = (answeredCards.size / vocabList.length) * 100;
+  progressFill.style.width = `${percent}%`;
+}
+
+// ---------- Result card text ----------
+function updateResultCard() {
+  correctCountEl.textContent = `Correct: ${correctCount}`;
+  wrongCountEl.textContent = `Wrong: ${wrongCount}`;
+  updateDonutChart();
+}
+
+// ---------- Donut chart ----------
+function updateDonutChart() {
+  const total = correctCount + wrongCount;
+  const correctPercent = total ? (correctCount / total) * 100 : 0;
+  const wrongPercent = total ? (wrongCount / total) * 100 : 0;
+
+  donutCorrect.setAttribute("stroke-dasharray", `${correctPercent} 100`);
+  donutCorrect.setAttribute("stroke-dashoffset", "25");
+
+  donutWrong.setAttribute("stroke-dasharray", `${wrongPercent} 100`);
+  donutWrong.setAttribute("stroke-dashoffset", `${25 - correctPercent}`);
+}
+
+// ---------- Navigation ----------
+function goToCard(index) {
+  currentIndex = (index + vocabList.length) % vocabList.length;
+  renderCard();
+}
+
+prevBtn.addEventListener("click", () => goToCard(currentIndex - 1));
+nextBtn.addEventListener("click", () => goToCard(currentIndex + 1));
+
+// ---------- Card flip ----------
+flipBtn.addEventListener("click", () => {
+  cardInner.classList.toggle("is-flipped");
+});
+
+// ---------- Answer tracking ----------
+function recordAnswer(isCorrect) {
+  if (answeredCards.has(currentIndex)) return;
+  answeredCards.add(currentIndex);
+
+  i
+
+f (isCorrect) {
+    correctCount++;
+  } else {
+    wrongCount++;
+  }
+
+  correctBtn.disabled = true;
+  wrongBtn.disabled = true;
+  updateResultCard();
+  updateProgressBar();
+}
+
+correctBtn.addEventListener("click", () => recordAnswer(true));
+wrongBtn.addEventListener("click", () => recordAnswer(false));
+
+// ---------- Pronunciation ----------
+function speak(text, lang) {
+  if (!("speechSynthesis" in window)) return;
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = lang;
+  window.speechSynthesis.speak(utterance);
+}
+
+voiceBtn.addEventListener("click", () => speak(vocabList[currentIndex].en, "en-US"));
+repeatBtn.addEventListener("click", () => speak(vocabList[currentIndex].en, "en-US"));
+
+// ---------- Dark mode ----------
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  localStorage.setItem("vocabBridgeTheme", theme);
+}
+
+themeToggleBtn.addEventListener("click", () => {
+  const current = document.documentElement.getAttribute("data-theme");
+  applyTheme(current === "dark" ? "light" : "dark");
+});
+
+const savedTheme = localStorage.getItem("vocabBridgeTheme");
+if (savedTheme) applyTheme(savedTheme);
+
+// ---------- Initial render ----------
+renderCard();
+updateResultCard();
+
 // Automatically set the footer copyright year
 const footerYear = document.getElementById("footer-year");
 if (footerYear) {
