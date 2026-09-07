@@ -251,9 +251,8 @@ header {
     bottom: 0;
     width: 100%;
     height: auto;
-    max-height: 3rem;
     gap: 1.25rem;
-    padding: 2rem 1.875rem;
+    padding: 1.25rem 1.875rem;
     border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
