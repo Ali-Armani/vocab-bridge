@@ -163,8 +163,8 @@ header {
 
 .test-word-container {
   display: block;
-  font-size: 5rem;
-  max-width: 10rem;
+  font-size: clamp(2rem, 8vw, 5rem);
+  max-width: 95%;
   margin: 0 auto 0;
 }
 
