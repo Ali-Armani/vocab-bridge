@@ -196,9 +196,10 @@ nav {
   align-items: center;
   width: 40rem;
   max-width: 90vw;
-  height: 4rem;
+  height: auto;
+  min-height: 4rem;
   margin: 0.75rem auto 0;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   border-radius: 0.75rem;
   border: 1px solid rgb(231, 231, 231);
   box-shadow: 0 10px 30px rgba(0,0,0,0.185);
