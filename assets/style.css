@@ -124,6 +124,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 30rem;
+  max-width: 90vw;
   height: 2rem;
   margin: 0.5rem auto 0;
 }
@@ -204,6 +205,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 40rem;
+  max-width: 90vw;
   height: 4rem;
   margin: 0.75rem auto 0;
   padding: 1.5rem;
@@ -307,7 +309,9 @@ header {
 =========================================================================*/
 
 @media (max-width: 650px) {
-  .main-card {
+  .main-card,
+  .card-counter,
+  .result-card {
     width: 100%;
     padding: 1rem;
   }
