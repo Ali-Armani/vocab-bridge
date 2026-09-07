@@ -47,7 +47,7 @@ button:hover {
 
 button:focus-visible,
 a:focus-visible {
-  outilne: 2px solid var(--primary-blue-color);
+  outline: 2px solid var(--primary-blue-color);
   outline-offset: 2px;
 }
 
