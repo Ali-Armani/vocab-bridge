@@ -452,6 +452,10 @@ a:focus-visible {
     width: 100%;
     padding: 1rem;
   }
+  .result-card {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(0.5rem, 3vw, 1rem);
 }
 
 @media (max-width: 500px) {
