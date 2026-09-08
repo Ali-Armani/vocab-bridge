@@ -92,7 +92,23 @@
   <div class="progress-fill" id="progressFill"></div>
 </div>
 
-<main id="main-content">
+<!-- Level selection screen -->
+<section id="levelSelect" class="selector-screen">
+  <h2>Choose a Level</h2>
+  <div class="selector-grid" id="levelGrid"></div>
+</section>
+
+<!-- Set selection screen -->
+<section id="setSelect" class="selector-screen" hidden>
+  <button type="button" class="back-btn" id="backToLevels">← Levels</button>
+  <h2 id="setSelectTitle">A1 Sets</h2>
+  <button type="button" class="review-btn" id="reviewMistakesBtn">🔁 Review Mistakes</button>
+  <div class="selector-grid" id="setGrid"></div>
+</section>
+
+<main id="main-content" hidden>
+
+  <button type="button" class="back-btn" id="backToSets">← Sets</button>
 
   <div class="card-counter" aria-live="polite">
     <p>Card 1 of 5</p>

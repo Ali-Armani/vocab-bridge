@@ -1,16 +1,39 @@
 // ---------- Vocabulary data ----------
-const vocabList = [
-  { en: "friend", fa: "دوست", examples: ["You are my best friend.", "She made a new friend at school."] },
-  { en: "journey", fa: "سفر", examples: ["Our journey took three days.", "Life is a journey, not a destination."] },
-  { en: "brave", fa: "شجاع", examples: ["The firefighter was very brave.", "It was a brave decision to speak up."] },
-  { en: "wisdom", fa: "خرد", examples: ["With age comes wisdom.", "Her wisdom helped the whole team."] },
-  { en: "harvest", fa: "برداشت محصول", examples: ["Farmers celebrate the harvest every autumn.", "The harvest was rich this year."] }
-];
+const vocabLevels = {
+  A1: [
+    {
+      id: "a1-set-1",
+      name: "Set 1: Family & People",
+      words: [
+        { id: "a1-s1-w1", en: "mother", fa: "مادر", examples: ["My mother cooks every day.", "I love my mother very much."] },
+        { id: "a1-s1-w2", en: "father", fa: "پدر", examples: ["My father works in a bank.", "His father is a doctor."] },
+        { id: "a1-s1-w3", en: "sister", fa: "خواهر", examples: ["I have one sister.", "Her sister lives in Tehran."] },
+        { id: "a1-s1-w4", en: "brother", fa: "برادر", examples: ["My brother is younger than me.", "He plays with his brother."] },
+        { id: "a1-s1-w5", en: "friend", fa: "دوست", examples: ["You are my best friend.", "She made a new friend at school."] },
+        { id: "a1-s1-w6", en: "teacher", fa: "معلم", examples: ["Our teacher is very kind.", "The teacher explained the lesson."] },
+        { id: "a1-s1-w7", en: "child", fa: "کودک", examples: ["The child is playing outside.", "Every child needs love."] },
+        { id: "a1-s1-w8", en: "name", fa: "اسم", examples: ["What is your name?", "My name is Ali."] },
+        { id: "a1-s1-w9", en: "house", fa: "خانه", examples: ["We live in a small house.", "Her house is near the park."] },
+        { id: "a1-s1-w10", en: "family", fa: "خانواده", examples: ["I love my family.", "Our family is very close."] }
+      ]
+    }
+    // Sets 2–30 go here with the same structure.
+  ]
+};
+
+// Flat lookup: word id -> word object (used by the mistakes review deck)
+const wordLookup = {};
+Object.values(vocabLevels).flat().forEach((set) => {
+  set.words.forEach((word) => { wordLookup[word.id] = word; });
+});
 
 // ---------- App state ----------
+let currentWords = [];
 let currentIndex = 0;
 let correctCount = 0;
 let wrongCount = 0;
+let currentLang = "en";
+let isReviewMode = false;
 const answeredCards = new Set();
 
 // ---------- DOM references ----------
@@ -33,6 +56,13 @@ const donutCorrect = document.getElementById("donutCorrect");
 const donutWrong = document.getElementById("donutWrong");
 const themeToggleBtn = document.querySelector(".day-night-toggle");
 
+const levelSelectScreen = document.getElementById("levelSelect");
+const setSelectScreen = document.getElementById("setSelect");
+const quizScreen = document.getElementById("main-content");
+const levelGrid = document.getElementById("levelGrid");
+const setGrid = document.getElementById("setGrid");
+const setSelectTitle = document.getElementById("setSelectTitle");
+
 // ---------- Language / RTL-LTR switch ----------
 const uiText = {
   en: {
@@ -54,8 +84,6 @@ const uiText = {
     cardCounter: (current, total) => `کارت ${toPersianDigits(current)} از ${toPersianDigits(total)}`
   }
 };
-
-let currentLang = "en";
 
 const taglineEl = document.getElementById("taglineText");
 const prevLabelEl = document.getElementById("prevLabel");
@@ -82,16 +110,99 @@ function applyLanguage(lang) {
   flipBtn.setAttribute("aria-label", text.flipLabel);
   progressLabelEl.textContent = text.progress;
 
-  cardCounter.textContent = text.cardCounter(currentIndex + 1, vocabList.length);
+  cardCounter.textContent = text.cardCounter(currentIndex + 1, currentWords.length || 1);
 }
 
 languageSwitchBtn.addEventListener("click", () => {
   applyLanguage(currentLang === "en" ? "fa" : "en");
 });
 
+// ---------- Screen navigation ----------
+function showScreen(screen) {
+  [levelSelectScreen, setSelectScreen, quizScreen].forEach((el) => {
+    el.hidden = el !== screen;
+  });
+}
+
+function renderLevelGrid() {
+  levelGrid.innerHTML = "";
+  Object.keys(vocabLevels).forEach((level) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.textContent = level;
+    btn.addEventListener("click", () => openLevel(level));
+    levelGrid.appendChild(btn);
+  });
+}
+
+function openLevel(level) {
+  setSelectTitle.textContent = `${level} Sets`;
+  setGrid.innerHTML = "";
+
+  vocabLevels[level].forEach((set) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.textContent = set.name;
+    btn.addEventListener("click", () => startSet(set.words));
+    setGrid.appendChild(btn);
+  });
+
+  showScreen(setSelectScreen);
+}
+
+function startSet(words) {
+  isReviewMode = false;
+  currentWords = words;
+  currentIndex = 0;
+  correctCount = 0;
+  wrongCount = 0;
+  answeredCards.clear();
+
+  showScreen(quizScreen);
+  renderCard();
+  updateResultCard();
+}
+
+document.getElementById("backToLevels").addEventListener("click", () => showScreen(levelSelectScreen));
+document.getElementById("backToSets").addEventListener("click", () => showScreen(setSelectScreen));
+
+// ---------- Wrong-answer storage ----------
+function getWrongWordIds() {
+  const stored = localStorage.getItem("vocabBridgeWrongWords");
+  return stored ? JSON.parse(stored) : [];
+}
+
+function saveWrongWordIds(ids) {
+  localStorage.setItem("vocabBridgeWrongWords", JSON.stringify(ids));
+}
+
+function addWrongWord(wordId) {
+  const ids = getWrongWordIds();
+  if (!ids.includes(wordId)) {
+    ids.push(wordId);
+    saveWrongWordIds(ids);
+  }
+}
+
+function removeWrongWord(wordId) {
+  saveWrongWordIds(getWrongWordIds().filter((id) => id !== wordId));
+}
+
+document.getElementById("reviewMistakesBtn").addEventListener("click", () => {
+  const wrongIds = getWrongWordIds();
+  if (wrongIds.length === 0) {
+    alert("No mistakes saved yet.");
+    return;
+  }
+  const reviewWords = wrongIds.map((id) => wordLookup[id]).filter(Boolean);
+  isReviewMode = true;
+  startSet(reviewWords);
+});
+
 // ---------- Render current card ----------
 function renderCard() {
-  const word = vocabList[currentIndex];
+  const word = currentWords[currentIndex];
+  if (!word) return;
 
   testWordFront.textContent = word.en;
   testWordBack.textContent = word.en;
@@ -104,7 +215,7 @@ function renderCard() {
     exampleList.appendChild(li);
   });
 
-  cardCounter.textContent = uiText[currentLang].cardCounter(currentIndex + 1, vocabList.length);
+  cardCounter.textContent = uiText[currentLang].cardCounter(currentIndex + 1, currentWords.length);
   cardInner.classList.remove("is-flipped");
 
   const alreadyAnswered = answeredCards.has(currentIndex);
@@ -116,7 +227,7 @@ function renderCard() {
 
 // ---------- Progress bar ----------
 function updateProgressBar() {
-  const percent = (answeredCards.size / vocabList.length) * 100;
+  const percent = (answeredCards.size / currentWords.length) * 100;
   progressFill.style.width = `${percent}%`;
 }
 
@@ -142,7 +253,7 @@ function updateDonutChart() {
 
 // ---------- Navigation ----------
 function goToCard(index) {
-  currentIndex = (index + vocabList.length) % vocabList.length;
+  currentIndex = (index + currentWords.length) % currentWords.length;
   renderCard();
 }
 
@@ -159,10 +270,13 @@ function recordAnswer(isCorrect) {
   if (answeredCards.has(currentIndex)) return;
   answeredCards.add(currentIndex);
 
+  const wordId = currentWords[currentIndex].id;
   if (isCorrect) {
     correctCount++;
+    removeWrongWord(wordId);
   } else {
     wrongCount++;
+    addWrongWord(wordId);
   }
 
   correctBtn.disabled = true;
@@ -184,7 +298,7 @@ function speak(text, lang) {
   window.speechSynthesis.speak(utterance);
 }
 
-voiceBtn.addEventListener("click", () => speak(vocabList[currentIndex].en, "en-US"));
+voiceBtn.addEventListener("click", () => speak(currentWords[currentIndex].en, "en-US"));
 
 // ---------- Reset quiz ----------
 function resetQuiz() {
@@ -212,16 +326,6 @@ themeToggleBtn.addEventListener("click", () => {
 
 const savedTheme = localStorage.getItem("vocabBridgeTheme");
 if (savedTheme) applyTheme(savedTheme);
-
-// ---------- Initial render ----------
-renderCard();
-updateResultCard();
-
-// Automatically set the footer copyright year
-const footerYear = document.getElementById("footer-year");
-if (footerYear) {
-    footerYear.textContent = new Date().getFullYear();
-}
 
 // ---------- Celebration animation ----------
 const celebrationEmojis = ["🎆", "🎇", "🎊", "🎉", "🪅", "🎋", "💐", "🌸"];
@@ -257,11 +361,21 @@ function playCelebration() {
 }
 
 function checkLessonCompletion() {
-  const isFinished = answeredCards.size === vocabList.length;
+  const isFinished = answeredCards.size === currentWords.length;
   if (!isFinished) return;
 
-  const scorePercent = (correctCount / vocabList.length) * 100;
-  if (scorePercent > 50) {
+  const scorePercent = (correctCount / currentWords.length) * 100;
+  if (scorePercent> 50) {
     playCelebration();
   }
 }
+
+// ---------- Footer copyright year ----------
+const footerYear = document.getElementById("footer-year");
+if (footerYear) {
+  footerYear.textContent = new Date().getFullYear();
+}
+
+// ---------- Initial screen ----------
+renderLevelGrid();
+showScreen(levelSelectScreen);
