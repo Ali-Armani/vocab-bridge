@@ -22,7 +22,7 @@
 
     <p>
       <strong>Vocab Bridge</strong><br>
-      Learn English
+      <span id="taglineText">Learn English</span>
     </p>
   </div>
 
@@ -195,7 +195,7 @@
 
         <div class="words-btn-container">
           <div class="test-word-container">
-            <p class="test-word" id="testWord">friend</p>
+            <p class="test-word" id="testWord" lang="en" dir="ltr">friend</p>
           </div>
           <button
             type="button"
@@ -210,9 +210,9 @@
 
       <!-- Back face -->
       <div class="card-face card-back">
-        <p class="test-word" id="testWordBack">friend</p>
+        <p class="test-word" id="testWordBack" lang="en" dir="ltr">friend</p>
         <p class="test-translation" lang="fa" dir="rtl" id="testTranslation">دوست</p>
-        <ul class="example-list" id="exampleList">
+        <ul class="example-list" id="exampleList" lang="en" dir="ltr">
           <li>You are my best friend.</li>
           <li>She made a new friend at school.</li>
         </ul>
@@ -232,11 +232,11 @@
   <div class="previous-next-btn">
     <button type="button" class="order-btn">
       <span aria-hidden="true">←</span>
-      <span>Previous</span>
+      <span id="prevLabel">Previous</span>
     </button>
 
     <button type="button" class="order-btn">
-      <span>Next</span>
+      <span id="nextLabel">Next</span>
       <span aria-hidden="true">→</span>
     </button>
   </div>
@@ -262,7 +262,7 @@
         <circle class="donut-correct" id="donutCorrect" cx="18" cy="18" r="15.9155" />
         <circle class="donut-wrong" id="donutWrong" cx="18" cy="18" r="15.9155" />
       </svg>
-      <p>Overall Progress</p>
+      <p id="progressLabel">Overall Progress</p>
     </div>
   </section>
 
