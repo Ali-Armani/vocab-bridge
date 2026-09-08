@@ -484,6 +484,15 @@ a:focus-visible {
   }
 }
 
+@media (max-width: 440px) {
+  .logo-container p {
+    font-size: 0.75rem;
+  }
+  .vocab-bridge-logo {
+    max-width: 3rem;
+  }
+}
+
 @media (max-height: 680px) {
   .main-card {
     height: 14rem;
