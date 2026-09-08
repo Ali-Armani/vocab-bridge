@@ -113,6 +113,7 @@ function recordAnswer(isCorrect) {
   wrongBtn.disabled = true;
   updateResultCard();
   updateProgressBar();
+  checkLessonCompletion();
 }
 
 correctBtn.addEventListener("click", () => recordAnswer(true));
@@ -152,4 +153,47 @@ updateResultCard();
 const footerYear = document.getElementById("footer-year");
 if (footerYear) {
     footerYear.textContent = new Date().getFullYear();
+}
+
+// ---------- Celebration animation ----------
+const celebrationEmojis = ["🎆", "🎇", "🎊", "🎉", "🪅", "🎋", "💐", "🌸"];
+
+// 8 directions, 45 degrees apart, starting from straight down
+const celebrationDirections = [
+  { dx: 0, dy: 150 },     // down
+  { dx: 106, dy: 106 },   // down-right
+  { dx: 150, dy: 0 },     // right
+  { dx: 106, dy: -106 },  // up-right
+  { dx: 0, dy: -150 },    // up
+  { dx: -106, dy: -106 }, // up-left
+  { dx: -150, dy: 0 },    // left
+  { dx: -106, dy: 106 }   // down-left
+];
+
+function playCelebration() {
+  const container = document.getElementById("celebration");
+  container.innerHTML = "";
+
+  celebrationEmojis.forEach((emoji, i) => {
+    const span = document.createElement("span");
+    span.className = "celebration-emoji";
+    span.textContent = emoji;
+    span.style.setProperty("--dx", `${celebrationDirections[i].dx}px`);
+    span.style.setProperty("--dy", `${celebrationDirections[i].dy}px`);
+    container.appendChild(span);
+  });
+
+  setTimeout(() => {
+    container.innerHTML = "";
+  }, 1500);
+}
+
+function checkLessonCompletion() {
+  const isFinished = answeredCards.size === vocabList.length;
+  if (!isFinished) return;
+
+  const scorePercent = (correctCount / vocabList.length) * 100;
+  if (scorePercent > 50) {
+    playCelebration();
+  }
 }
