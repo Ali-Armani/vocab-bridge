@@ -99,11 +99,11 @@ a:focus-visible {
   justify-content: center;
 }
 
-.language-switch img,
-.day-night-toggle img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.language-switch svg,
+.day-night-toggle svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  color: var(--primary-blue-color);
 }
 
 /* Top progress bar */
