@@ -97,7 +97,9 @@ const uiText = {
     setsTitle: (level) => `${level} Sets`,
     backToSets: "← Sets",
     knewIt: "I knew it ✓",
-    didntKnow: "I didn't know ✗"
+    didntKnow: "I didn't know ✗",
+    correctCount: (count) => `Correct: ${count}`,
+    wrongCount: (count) => `Wrong: ${count}`
   },
   fa: {
     tagline: "آموزش انگلیسی",
@@ -113,7 +115,9 @@ const uiText = {
     setsTitle: (level) => `مجموعه‌های ${level}`,
     backToSets: "← مجموعه‌ها",
     knewIt: "بلد بودم ✓",
-    didntKnow: "بلد نبودم ✗"
+    didntKnow: "بلد نبودم ✗",
+    correctCount: (count) => `درست: ${toPersianDigits(count)}`,
+    wrongCount: (count) => `غلط: ${toPersianDigits(count)}`
   }
 };
 
@@ -153,6 +157,7 @@ function applyLanguage(lang) {
   backToSetsLabelEl.textContent = text.backToSets;
   knewItLabelEl.textContent = text.knewIt;
   didntKnowLabelEl.textContent = text.didntKnow;
+  updateResultCard();
 
   cardCounter.textContent = text.cardCounter(currentIndex + 1, currentWords.length || 1);
 
@@ -289,8 +294,8 @@ function updateProgressBar() {
 
 // ---------- Result card text ----------
 function updateResultCard() {
-  correctCountEl.textContent = `Correct: ${correctCount}`;
-  wrongCountEl.textContent = `Wrong: ${wrongCount}`;
+  correctCountEl.textContent = uiText[currentLang].correctCount(correctCount);
+  wrongCountEl.textContent = uiText[currentLang].wrongCount(wrongCount);
   updateDonutChart();
 }
 
