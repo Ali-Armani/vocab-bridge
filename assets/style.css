@@ -427,6 +427,26 @@ a:focus-visible {
   }
 }
 
+@media (max-width: 500px) {
+  button {
+    width: 5.8rem;
+  }
+  .result-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+}
+
+@media (max-height: 680px) {
+  .main-card {
+    height: 14rem;
+  }
+  .test-word-container {
+    font-size: clamp(1.25rem, 4vw, 3rem);
+  }
+}
+
 /* ========================================================================
 
                                   Dark Mode
