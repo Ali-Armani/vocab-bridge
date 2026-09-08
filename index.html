@@ -29,6 +29,15 @@
   <div class="header-actions">
     <button
       type="button"
+      class="header-back-btn"
+      id="backToSets"
+      hidden
+    >
+      <span id="backToSetsLabel">← Sets</span>
+    </button>
+
+    <button
+      type="button"
       class="language-switch"
       aria-label="Change language"
     >
@@ -112,8 +121,6 @@
 </section>
 
 <main id="main-content" hidden>
-
-  <button type="button" class="back-btn" id="backToSets">← Sets</button>
 
   <div class="card-counter" aria-live="polite">
     <p>Card 1 of 5</p>
