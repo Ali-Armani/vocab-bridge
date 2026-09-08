@@ -33,6 +33,7 @@ const vocabLevels = {
         { id: "a1-s2-w10", en: "chicken", fa: "مرغ", examples: ["She is cooking chicken tonight.", "Chicken is my favorite food."] }
       ]
     }
+    // Sets 3–30 go here with the same structure.
   ]
 };
 
@@ -94,7 +95,9 @@ const uiText = {
     backToLevels: "← Levels",
     reviewMistakes: "🔁 Review Mistakes",
     setsTitle: (level) => `${level} Sets`,
-    backToSets: "← Sets"
+    backToSets: "← Sets",
+    knewIt: "I knew it ✓",
+    didntKnow: "I didn't know ✗"
   },
   fa: {
     tagline: "آموزش انگلیسی",
@@ -108,7 +111,9 @@ const uiText = {
     backToLevels: "← سطح‌ها",
     reviewMistakes: "🔁 مرور اشتباهات",
     setsTitle: (level) => `مجموعه‌های ${level}`,
-    backToSets: "← مجموعه‌ها"
+    backToSets: "← مجموعه‌ها",
+    knewIt: "بلد بودم ✓",
+    didntKnow: "بلد نبودم ✗"
   }
 };
 
@@ -121,6 +126,8 @@ const chooseLevelTitleEl = document.getElementById("chooseLevelTitle");
 const backToLevelsLabelEl = document.getElementById("backToLevelsLabel");
 const reviewMistakesLabelEl = document.getElementById("reviewMistakesLabel");
 const backToSetsLabelEl = document.getElementById("backToSetsLabel");
+const knewItLabelEl = document.getElementById("knewItLabel");
+const didntKnowLabelEl = document.getElementById("didntKnowLabel");
 
 function toPersianDigits(num) {
   const persianDigits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
@@ -144,6 +151,8 @@ function applyLanguage(lang) {
   backToLevelsLabelEl.textContent = text.backToLevels;
   reviewMistakesLabelEl.textContent = text.reviewMistakes;
   backToSetsLabelEl.textContent = text.backToSets;
+  knewItLabelEl.textContent = text.knewIt;
+  didntKnowLabelEl.textContent = text.didntKnow;
 
   cardCounter.textContent = text.cardCounter(currentIndex + 1, currentWords.length || 1);
 
