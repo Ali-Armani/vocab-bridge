@@ -3,7 +3,7 @@ const vocabLevels = {
   A1: [
     {
       id: "a1-set-1",
-      name: "Set 1: Family & People",
+      name: { en: "Set 1: Family & People", fa: "مجموعه ۱: خانواده و افراد" },
       words: [
         { id: "a1-s1-w1", en: "mother", fa: "مادر", examples: ["My mother cooks every day.", "I love my mother very much."] },
         { id: "a1-s1-w2", en: "father", fa: "پدر", examples: ["My father works in a bank.", "His father is a doctor."] },
@@ -34,6 +34,7 @@ let correctCount = 0;
 let wrongCount = 0;
 let currentLang = "en";
 let isReviewMode = false;
+let currentOpenLevel = null;
 const answeredCards = new Set();
 
 // ---------- DOM references ----------
@@ -72,7 +73,11 @@ const uiText = {
     flip: "Flip Card",
     flipLabel: "Flip flashcard",
     progress: "Overall Progress",
-    cardCounter: (current, total) => `Card ${current} of ${total}`
+    cardCounter: (current, total) => `Card ${current} of ${total}`,
+    chooseLevel: "Choose a Level",
+    backToLevels: "← Levels",
+    reviewMistakes: "🔁 Review Mistakes",
+    setsTitle: (level) => `${level} Sets`
   },
   fa: {
     tagline: "آموزش انگلیسی",
@@ -81,7 +86,11 @@ const uiText = {
     flip: "مشاهده جواب",
     flipLabel: "مشاهده جواب کارت",
     progress: "پیشرفت کلی",
-    cardCounter: (current, total) => `کارت ${toPersianDigits(current)} از ${toPersianDigits(total)}`
+    cardCounter: (current, total) => `کارت ${toPersianDigits(current)} از ${toPersianDigits(total)}`,
+    chooseLevel: "انتخاب سطح",
+    backToLevels: "← سطح ها",
+    reviewMistakes: "🔁 مرور اشتباهات",
+    setsTitle: (level) => `مجموعه‌های ${level}`
   }
 };
 
@@ -90,6 +99,9 @@ const prevLabelEl = document.getElementById("prevLabel");
 const nextLabelEl = document.getElementById("nextLabel");
 const progressLabelEl = document.getElementById("progressLabel");
 const languageSwitchBtn = document.querySelector(".language-switch");
+const chooseLevelTitleEl = document.getElementById("chooseLevelTitle");
+const backToLevelsLabelEl = document.getElementById("backToLevelsLabel");
+const reviewMistakesLabelEl = document.getElementById("reviewMistakesLabel");
 
 function toPersianDigits(num) {
   const persianDigits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
@@ -109,8 +121,16 @@ function applyLanguage(lang) {
   flipBtn.textContent = text.flip;
   flipBtn.setAttribute("aria-label", text.flipLabel);
   progressLabelEl.textContent = text.progress;
+  chooseLevelTitleEl.textContent = text.chooseLevel;
+  backToLevelsLabelEl.textContent = text.backToLevels;
+  reviewMistakesLabelEl.textContent = text.reviewMistakes;
 
   cardCounter.textContent = text.cardCounter(currentIndex + 1, currentWords.length || 1);
+
+  if (currentOpenLevel) {
+    setSelectTitle.textContent = text.setsTitle(currentOpenLevel);
+  }
+  refreshSetGridLabels();
 }
 
 languageSwitchBtn.addEventListener("click", () => {
@@ -136,18 +156,23 @@ function renderLevelGrid() {
 }
 
 function openLevel(level) {
-  setSelectTitle.textContent = `${level} Sets`;
+  currentOpenLevel = level;
+  setSelectTitle.textContent = uiText[currentLang].setsTitle(level);
+  refreshSetGridLabels();
+  showScreen(setSelectScreen);
+}
+
+function refreshSetGridLabels() {
+  if (!currentOpenLevel) return;
   setGrid.innerHTML = "";
 
-  vocabLevels[level].forEach((set) => {
+  vocabLevels[currentOpenLevel].forEach((set) => {
     const btn = document.createElement("button");
     btn.type = "button";
-    btn.textContent = set.name;
+    btn.textContent = set.name[currentLang];
     btn.addEventListener("click", () => startSet(set.words));
     setGrid.appendChild(btn);
   });
-
-  showScreen(setSelectScreen);
 }
 
 function startSet(words) {
@@ -191,7 +216,7 @@ function removeWrongWord(wordId) {
 document.getElementById("reviewMistakesBtn").addEventListener("click", () => {
   const wrongIds = getWrongWordIds();
   if (wrongIds.length === 0) {
-    alert("No mistakes saved yet.");
+    alert("No mistakes savedyet.");
     return;
   }
   const reviewWords = wrongIds.map((id) => wordLookup[id]).filter(Boolean);
@@ -365,7 +390,7 @@ function checkLessonCompletion() {
   if (!isFinished) return;
 
   const scorePercent = (correctCount / currentWords.length) * 100;
-  if (scorePercent> 50) {
+  if (scorePercent > 50) {
     playCelebration();
   }
 }
