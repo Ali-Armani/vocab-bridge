@@ -207,7 +207,7 @@ function refreshSetGridLabels() {
 }
 
 function startSet(words) {
-  isReviewMode = false;
+  // isReviewMode = false;
   currentWords = words;
   currentIndex = 0;
   correctCount = 0;
