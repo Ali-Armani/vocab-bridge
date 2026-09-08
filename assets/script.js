@@ -56,6 +56,7 @@ const progressFill = document.getElementById("progressFill");
 const donutCorrect = document.getElementById("donutCorrect");
 const donutWrong = document.getElementById("donutWrong");
 const themeToggleBtn = document.querySelector(".day-night-toggle");
+const backToSetsBtn = document.getElementById("backToSets");
 
 const levelSelectScreen = document.getElementById("levelSelect");
 const setSelectScreen = document.getElementById("setSelect");
@@ -77,7 +78,8 @@ const uiText = {
     chooseLevel: "Choose a Level",
     backToLevels: "← Levels",
     reviewMistakes: "🔁 Review Mistakes",
-    setsTitle: (level) => `${level} Sets`
+    setsTitle: (level) => `${level} Sets`,
+    backToSets: "← Sets"
   },
   fa: {
     tagline: "آموزش انگلیسی",
@@ -88,9 +90,10 @@ const uiText = {
     progress: "پیشرفت کلی",
     cardCounter: (current, total) => `کارت ${toPersianDigits(current)} از ${toPersianDigits(total)}`,
     chooseLevel: "انتخاب سطح",
-    backToLevels: "← سطح ها",
+    backToLevels: "← سطح‌ها",
     reviewMistakes: "🔁 مرور اشتباهات",
-    setsTitle: (level) => `مجموعه‌های ${level}`
+    setsTitle: (level) => `مجموعه‌های ${level}`,
+    backToSets: "← مجموعه‌ها"
   }
 };
 
@@ -102,6 +105,7 @@ const languageSwitchBtn = document.querySelector(".language-switch");
 const chooseLevelTitleEl = document.getElementById("chooseLevelTitle");
 const backToLevelsLabelEl = document.getElementById("backToLevelsLabel");
 const reviewMistakesLabelEl = document.getElementById("reviewMistakesLabel");
+const backToSetsLabelEl = document.getElementById("backToSetsLabel");
 
 function toPersianDigits(num) {
   const persianDigits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
@@ -124,6 +128,7 @@ function applyLanguage(lang) {
   chooseLevelTitleEl.textContent = text.chooseLevel;
   backToLevelsLabelEl.textContent = text.backToLevels;
   reviewMistakesLabelEl.textContent = text.reviewMistakes;
+  backToSetsLabelEl.textContent = text.backToSets;
 
   cardCounter.textContent = text.cardCounter(currentIndex + 1, currentWords.length || 1);
 
@@ -142,6 +147,8 @@ function showScreen(screen) {
   [levelSelectScreen, setSelectScreen, quizScreen].forEach((el) => {
     el.hidden = el !== screen;
   });
+
+  backToSetsBtn.hidden = screen !== quizScreen;
 }
 
 function renderLevelGrid() {
@@ -189,7 +196,7 @@ function startSet(words) {
 }
 
 document.getElementById("backToLevels").addEventListener("click", () => showScreen(levelSelectScreen));
-document.getElementById("backToSets").addEventListener("click", () => showScreen(setSelectScreen));
+backToSetsBtn.addEventListener("click", () => showScreen(setSelectScreen));
 
 // ---------- Wrong-answer storage ----------
 function getWrongWordIds() {
@@ -216,7 +223,7 @@ function removeWrongWord(wordId) {
 document.getElementById("reviewMistakesBtn").addEventListener("click", () => {
   const wrongIds = getWrongWordIds();
   if (wrongIds.length === 0) {
-    alert("No mistakes savedyet.");
+    alert("No mistakes saved yet.");
     return;
   }
   const reviewWords = wrongIds.map((id) => wordLookup[id]).filter(Boolean);
