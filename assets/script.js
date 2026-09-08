@@ -88,7 +88,7 @@ const uiText = {
     progress: "پیشرفت کلی",
     cardCounter: (current, total) => `کارت ${toPersianDigits(current)} از ${toPersianDigits(total)}`,
     chooseLevel: "انتخاب سطح",
-    backToLevels: "← سطوح",
+    backToLevels: "← سطح ها",
     reviewMistakes: "🔁 مرور اشتباهات",
     setsTitle: (level) => `مجموعه‌های ${level}`
   }
