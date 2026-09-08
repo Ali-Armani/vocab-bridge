@@ -284,8 +284,12 @@ a:focus-visible {
   padding: 0.6rem;
 }
 
-.back-btn,
+.back-btn {
+  margin-bottom: 1rem;
+}
+
 .review-btn {
+  margin-top: clamp(0.5rem, 3vw, 1rem);
   margin-bottom: 1rem;
 }
 
