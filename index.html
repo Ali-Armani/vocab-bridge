@@ -110,11 +110,11 @@
 
 <!-- Set selection screen -->
 <section id="setSelect" class="selector-screen" hidden>
-  <button type="button" class="back-btn" id="backToLevels">
+  <button type="button" class="back-btn" id="backToLevels" aria-lebel="Back to levels">
     <span id="backToLevelsLabel">← Levels</span>
   </button>
   <h2 id="setSelectTitle">A1 Sets</h2>
-  <button type="button" class="review-btn" id="reviewMistakesBtn">
+  <button type="button" class="review-btn" id="reviewMistakesBtn" aria-label="Review your Mistakes">
     <span id="reviewMistakesLabel">🔁 Review Mistakes</span>
   </button>
   <div class="selector-grid" id="setGrid"></div>
@@ -245,10 +245,10 @@
           <li>She made a new friend at school.</li>
         </ul>
         <div class="answer-buttons">
-          <button type="button" class="answer-btn correct-btn" id="correctBtn">
+          <button type="button" class="answer-btn correct-btn" id="correctBtn" arialabel="Mark as known">
             <span id="knewItLabel">I knew it ✓</span>
           </button>
-          <button type="button" class="answer-btn wrong-btn" id="wrongBtn">
+          <button type="button" class="answer-btn wrong-btn" id="wrongBtn"  arialabel="Mark as challenging word">
             <span id="didntKnowLabel">I didn't know ✗</span>
           </button>
         </div>
@@ -258,12 +258,12 @@
   </div>
 
   <div class="previous-next-btn">
-    <button type="button" class="order-btn">
+    <button type="button" class="order-btn" aria-label="Previous card">
       <span aria-hidden="true">←</span>
       <span id="prevLabel">Previous</span>
     </button>
 
-    <button type="button" class="order-btn">
+    <button type="button" class="order-btn" aria-label="Next card">
       <span id="nextLabel">Next</span>
       <span aria-hidden="true">→</span>
     </button>
