@@ -33,6 +33,62 @@ const donutCorrect = document.getElementById("donutCorrect");
 const donutWrong = document.getElementById("donutWrong");
 const themeToggleBtn = document.querySelector(".day-night-toggle");
 
+// ---------- Language / RTL-LTR switch ----------
+const uiText = {
+  en: {
+    tagline: "Learn English",
+    previous: "Previous",
+    next: "Next",
+    flip: "Flip Card",
+    flipLabel: "Flip flashcard",
+    progress: "Overall Progress",
+    cardCounter: (current, total) => `Card ${current} of ${total}`
+  },
+  fa: {
+    tagline: "آموزش انگلیسی",
+    previous: "قبلی",
+    next: "بعدی",
+    flip: "مشاهده جواب",
+    flipLabel: "مشاهده جواب کارت",
+    progress: "پیشرفت کلی",
+    cardCounter: (current, total) => `کارت ${toPersianDigits(current)} از ${toPersianDigits(total)}`
+  }
+};
+
+let currentLang = "en";
+
+const taglineEl = document.getElementById("taglineText");
+const prevLabelEl = document.getElementById("prevLabel");
+const nextLabelEl = document.getElementById("nextLabel");
+const progressLabelEl = document.getElementById("progressLabel");
+const languageSwitchBtn = document.querySelector(".language-switch");
+
+function toPersianDigits(num) {
+  const persianDigits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
+  return String(num).replace(/[0-9]/g, (digit) => persianDigits[digit]);
+}
+
+function applyLanguage(lang) {
+  currentLang = lang;
+  const text = uiText[lang];
+
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === "fa" ? "rtl" : "ltr";
+
+  taglineEl.textContent = text.tagline;
+  prevLabelEl.textContent = text.previous;
+  nextLabelEl.textContent = text.next;
+  flipBtn.textContent = text.flip;
+  flipBtn.setAttribute("aria-label", text.flipLabel);
+  progressLabelEl.textContent = text.progress;
+
+  cardCounter.textContent = text.cardCounter(currentIndex + 1, vocabList.length);
+}
+
+languageSwitchBtn.addEventListener("click", () => {
+  applyLanguage(currentLang === "en" ? "fa" : "en");
+});
+
 // ---------- Render current card ----------
 function renderCard() {
   const word = vocabList[currentIndex];
@@ -48,7 +104,7 @@ function renderCard() {
     exampleList.appendChild(li);
   });
 
-  cardCounter.textContent = `Card ${currentIndex + 1} of ${vocabList.length}`;
+  cardCounter.textContent = uiText[currentLang].cardCounter(currentIndex + 1, vocablist.length);
   cardInner.classList.remove("is-flipped");
 
   const alreadyAnswered = answeredCards.has(currentIndex);
