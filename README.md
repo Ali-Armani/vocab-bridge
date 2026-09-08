@@ -111,3 +111,25 @@ Animations respect prefers-reduced-motion
 [ ] Full RTL/LTR interface language switch
 [ ] Larger, categorized word bank
 [ ] Dictionary API integration for auto-generated definitions and audio
+
+## 📬 Contact
+
+<div align="center">
+
+<a href="https://github.com/Ali-Armani" target="_blank">
+  <img src="https://cdn.simpleicons.org/github/181717" width="40" height="40" alt="GitHub" />
+</a>
+&nbsp;&nbsp;
+<a href="https://linkedin.com/in/aliarmani" target="_blank">
+  <img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="40" height="40" alt="LinkedIn" />
+</a>
+&nbsp;&nbsp;
+<a href="https://t.me/ali_armani_dev" target="_blank">
+  <img src="https://cdn.simpleicons.org/telegram/26A5E4" width="40" height="40" alt="Telegram" />
+</a>
+&nbsp;&nbsp;
+<a href="mailto:armani.ali@proton.me">
+  <img src="https://cdn.simpleicons.org/gmail/EA4335" width="40" height="40" alt="Email" />
+</a>
+
+</div>
