@@ -104,7 +104,7 @@ function renderCard() {
     exampleList.appendChild(li);
   });
 
-  cardCounter.textContent = uiText[currentLang].cardCounter(currentIndex + 1, vocablist.length);
+  cardCounter.textContent = uiText[currentLang].cardCounter(currentIndex + 1, vocabList.length);
   cardInner.classList.remove("is-flipped");
 
   const alreadyAnswered = answeredCards.has(currentIndex);
