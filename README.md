@@ -96,7 +96,7 @@ vocab-bridge/
 ```bash
 git clone https://github.com/Ali-Armani/vocab-bridge.git
 cd vocab-bridge
-
+```
 Then just open index.html in your browser — no build tools or dependencies needed.
 Or try it live, no setup required:
 👉 https://ali-armani.github.io/vocab-bridge/
