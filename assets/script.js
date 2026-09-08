@@ -103,9 +103,7 @@ function recordAnswer(isCorrect) {
   if (answeredCards.has(currentIndex)) return;
   answeredCards.add(currentIndex);
 
-  i
-
-f (isCorrect) {
+  if (isCorrect) {
     correctCount++;
   } else {
     wrongCount++;
