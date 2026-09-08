@@ -93,16 +93,21 @@
 </div>
 
 <!-- Level selection screen -->
+<!-- Level selection screen -->
 <section id="levelSelect" class="selector-screen">
-  <h2>Choose a Level</h2>
+  <h2 id="chooseLevelTitle">Choose a Level</h2>
   <div class="selector-grid" id="levelGrid"></div>
 </section>
 
 <!-- Set selection screen -->
 <section id="setSelect" class="selector-screen" hidden>
-  <button type="button" class="back-btn" id="backToLevels">← Levels</button>
+  <button type="button" class="back-btn" id="backToLevels">
+    <span id="backToLevelsLabel">← Levels</span>
+  </button>
   <h2 id="setSelectTitle">A1 Sets</h2>
-  <button type="button" class="review-btn" id="reviewMistakesBtn">🔁 Review Mistakes</button>
+  <button type="button" class="review-btn" id="reviewMistakesBtn">
+    <span id="reviewMistakesLabel">🔁 Review Mistakes</span>
+  </button>
   <div class="selector-grid" id="setGrid"></div>
 </section>
 
