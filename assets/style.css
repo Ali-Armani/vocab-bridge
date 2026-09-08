@@ -99,6 +99,14 @@ a:focus-visible {
   justify-content: center;
 }
 
+.header-back-btn {
+  width: auto;
+  height: 2.5rem;
+  padding: 0 clamp(0.5rem, 2vw, 0.85rem);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
 .language-switch svg,
 .day-night-toggle svg {
   width: 1.4rem;
