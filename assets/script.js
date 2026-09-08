@@ -16,8 +16,23 @@ const vocabLevels = {
         { id: "a1-s1-w9", en: "house", fa: "خانه", examples: ["We live in a small house.", "Her house is near the park."] },
         { id: "a1-s1-w10", en: "family", fa: "خانواده", examples: ["I love my family.", "Our family is very close."] }
       ]
+    },
+    {
+      id: "a1-set-2",
+      name: { en: "Set 2: Food & Drink", fa: "مجموعه ۲: غذا و نوشیدنی" },
+      words: [
+        { id: "a1-s2-w1", en: "water", fa: "آب", examples: ["I drink water every morning.", "Can I have a glass of water?"] },
+        { id: "a1-s2-w2", en: "bread", fa: "نان", examples: ["We eat bread with breakfast.", "She bought fresh bread."] },
+        { id: "a1-s2-w3", en: "milk", fa: "شیر", examples: ["I like milk in my tea.", "The baby drinks milk."] },
+        { id: "a1-s2-w4", en: "apple", fa: "سیب", examples: ["An apple a day is healthy.", "He is eating a red apple."] },
+        { id: "a1-s2-w5", en: "coffee", fa: "قهوه", examples: ["I drink coffee in the morning.", "This coffee is very hot."] },
+        { id: "a1-s2-w6", en: "tea", fa: "چای", examples: ["Would you like some tea?", "She makes tea every afternoon."] },
+        { id: "a1-s2-w7", en: "rice", fa: "برنج", examples: ["We eat rice for dinner.", "Rice is popular in many countries."] },
+        { id: "a1-s2-w8", en: "egg", fa: "تخم‌مرغ", examples: ["I had an egg for breakfast.", "Can you boil an egg for me?"] },
+        { id: "a1-s2-w9", en: "fish", fa: "ماهی", examples: ["We had fish for lunch.", "He likes to eat fish."] },
+        { id: "a1-s2-w10", en: "chicken", fa: "مرغ", examples: ["She is cooking chicken tonight.", "Chicken is my favorite food."] }
+      ]
     }
-    // Sets 2–30 go here with the same structure.
   ]
 };
 
