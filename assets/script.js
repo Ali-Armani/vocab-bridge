@@ -220,7 +220,12 @@ function startSet(words) {
 }
 
 document.getElementById("backToLevels").addEventListener("click", () => showScreen(levelSelectScreen));
-backToSetsBtn.addEventListener("click", () => showScreen(setSelectScreen));
+backToSetsBtn.addEventListener("click", () => {
+  if (currentOpenLevel) {
+    setSelectTitle.textContent = uiText[currentLang].setsTitle(currentOpenLevel);
+  }
+  showScreen(setSelectScreen);
+});
 
 // ---------- Wrong-answer storage ----------
 function getWrongWordIds() {
