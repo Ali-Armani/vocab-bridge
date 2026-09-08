@@ -129,7 +129,19 @@ function speak(text, lang) {
 }
 
 voiceBtn.addEventListener("click", () => speak(vocabList[currentIndex].en, "en-US"));
-repeatBtn.addEventListener("click", () => speak(vocabList[currentIndex].en, "en-US"));
+
+// ---------- Reset quiz ----------
+function resetQuiz() {
+  currentIndex = 0;
+  correctCount = 0;
+  wrongCount = 0;
+  answeredCards.clear();
+
+  renderCard();
+  updateResultCard();
+}
+
+repeatBtn.addEventListener("click", resetQuiz);
 
 // ---------- Dark mode ----------
 function applyTheme(theme) {
