@@ -63,6 +63,22 @@ const vocabLevelA2 = [
       { id: "a2-s4-w9", en: "subway", fa: "مترو", examples: ["I take the subway every morning.", "The subway is fast and cheap."] },
       { id: "a2-s4-w10", en: "ticket", fa: "بلیط", examples: ["I bought a train ticket.", "Where is your ticket?"] }
     ]
+  },
+  {
+    id: "a2-set-5",
+    name: { en: "Set 5: Shopping & Money", fa: "مجموعه ۵: خرید و پول" },
+    words: [
+      { id: "a2-s5-w1", en: "money", fa: "پول", examples: ["I don't have much money.", "She saved a lot of money."] },
+      { id: "a2-s5-w2", en: "price", fa: "قیمت", examples: ["What is the price of this shirt?", "The price is too high."] },
+      { id: "a2-s5-w3", en: "shop", fa: "مغازه", examples: ["I bought bread at the shop.", "The shop closes at nine."] },
+      { id: "a2-s5-w4", en: "market", fa: "بازار", examples: ["We go to the market every week.", "The market is very crowded."] },
+      { id: "a2-s5-w5", en: "customer", fa: "مشتری", examples: ["The customer asked for help.", "We have many customers today."] },
+      { id: "a2-s5-w6", en: "cashier", fa: "صندوق‌دار", examples: ["The cashier gave me the receipt.", "She works as a cashier."] },
+      { id: "a2-s5-w7", en: "discount", fa: "تخفیف", examples: ["This shirt has a big discount.", "We got a discount on the price."] },
+      { id: "a2-s5-w8", en: "bill", fa: "صورت‌حساب", examples: ["Can I have the bill, please?", "He paid the bill in cash."] },
+      { id: "a2-s5-w9", en: "wallet", fa: "کیف پول", examples: ["I left my wallet at home.", "Her wallet is full of cards."] },
+      { id: "a2-s5-w10", en: "coin", fa: "سکه", examples: ["I found a coin on the ground.", "He collects old coins."] }
+    ]
   }
-  // Sets 5–30 go here with the same structure.
+  // Sets 6–30 go here with the same structure.
 ];
