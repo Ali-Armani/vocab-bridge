@@ -244,7 +244,7 @@ a:focus-visible {
 
 .flip-card-btn {
   display: block;
-  margin: 0 auto 0;
+  margin: 1rem auto 0;
 }
 
 /* Back face content */
