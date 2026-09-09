@@ -529,6 +529,10 @@ a:focus-visible {
   border-top-color: rgba(255, 255, 255, 0.15);
 }
 
+[data-theme="dark"] .footer-icon-link:hover,
+[data-theme="dark"] .footer-copyright:hover {
+  color: rgb(56, 189, 248);
+}
 
 /* ========================================================================
 
