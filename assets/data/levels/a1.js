@@ -144,20 +144,20 @@ const vocabLevelA1 = [
     ]
   },
   {
-    id: "a1-set-11",
-    name: { en: "Set 11: Clothes", fa: "مجموعه ۱۱: لباس‌ها" },
+    id: "a1-set-12",
+    name: { en: "Set 12: Places in Town", fa: "مجموعه ۱۲: مکان‌های شهر" },
     words: [
-      { id: "a1-s11-w1", en: "shirt", fa: "پیراهن", examples: ["He is wearing a blue shirt.", "I bought a new shirt."] },
-      { id: "a1-s11-w2", en: "pants", fa: "شلوار", examples: ["These pants are too long.", "She wore black pants."] },
-      { id: "a1-s11-w3", en: "shoes", fa: "کفش", examples: ["My shoes are very comfortable.", "He bought new shoes."] },
-      { id: "a1-s11-w4", en: "hat", fa: "کلاه", examples: ["She is wearing a red hat.", "I need a hat for the sun."] },
-      { id: "a1-s11-w5", en: "jacket", fa: "ژاکت", examples: ["He wore a jacket because it was cold.", "I like your new jacket."] },
-      { id: "a1-s11-w6", en: "dress", fa: "لباس (زنانه)", examples: ["She wore a beautiful dress.", "I bought a green dress."] },
-      { id: "a1-s11-w7", en: "socks", fa: "جوراب", examples: ["My socks are warm.", "He lost one of his socks."] },
-      { id: "a1-s11-w8", en: "skirt", fa: "دامن", examples: ["She is wearing a long skirt.", "I bought a new skirt."] },
-      { id: "a1-s11-w9", en: "gloves", fa: "دستکش", examples: ["I wear gloves in winter.", "She lost her gloves."] },
-      { id: "a1-s11-w10", en: "scarf", fa: "شال گردن", examples: ["He wore a warm scarf.", "She bought a red scarf."] }
+      { id: "a1-s12-w1", en: "school", fa: "مدرسه", examples: ["I go to school every day.", "The school is near my house."] },
+      { id: "a1-s12-w2", en: "hospital", fa: "بیمارستان", examples: ["She works at the hospital.", "The hospital is very big."] },
+      { id: "a1-s12-w3", en: "park", fa: "پارک", examples: ["We play in the park.", "The park is very quiet."] },
+      { id: "a1-s12-w4", en: "restaurant", fa: "رستوران", examples: ["We had dinner at a restaurant.", "This restaurant is very popular."] },
+      { id: "a1-s12-w5", en: "bank", fa: "بانک", examples: ["I need to go to the bank.", "The bank opens at nine."] },
+      { id: "a1-s12-w6", en: "station", fa: "ایستگاه", examples: ["The train station is close by.", "We waited at the bus station."] },
+      { id: "a1-s12-w7", en: "library", fa: "کتابخانه", examples: ["I study at the library.", "The library is very quiet."] },
+      { id: "a1-s12-w8", en: "supermarket", fa: "سوپرمارکت", examples: ["We buy food at the supermarket.", "The supermarket is open late."] },
+      { id: "a1-s12-w9", en: "church", fa: "کلیسا", examples: ["They go to church on Sunday.", "The church is very old."] },
+      { id: "a1-s12-w10", en: "hotel", fa: "هتل", examples: ["We stayed at a nice hotel.", "The hotel is near the beach."] }
     ]
   }
-  // Sets 12–30 go here with the same structure.
+  // Sets 13–30 go here with the same structure.
 ];
