@@ -62,6 +62,22 @@ const vocabLevelA1 = [
       { id: "a1-s4-w9", en: "snow", fa: "برف", examples: ["The snow is white and cold.", "Children play in the snow."] },
       { id: "a1-s4-w10", en: "flower", fa: "گل", examples: ["She gave me a flower.", "The flower smells nice."] }
     ]
+  },
+  {
+    id: "a1-set-5",
+    name: { en: "Set 5: Everyday Objects", fa: "مجموعه ۵: وسایل روزمره" },
+    words: [
+      { id: "a1-s5-w1", en: "table", fa: "میز", examples: ["The book is on the table.", "We eat dinner at the table."] },
+      { id: "a1-s5-w2", en: "chair", fa: "صندلی", examples: ["Please sit on the chair.", "There are four chairs in the room."] },
+      { id: "a1-s5-w3", en: "door", fa: "در", examples: ["Please close the door.", "She opened the door slowly."] },
+      { id: "a1-s5-w4", en: "window", fa: "پنجره", examples: ["Open the window, please.", "I can see the street from the window."] },
+      { id: "a1-s5-w5", en: "bed", fa: "تخت", examples: ["I sleep in my bed.", "The bed is very comfortable."] },
+      { id: "a1-s5-w6", en: "book", fa: "کتاب", examples: ["I am reading a book.", "This book is very interesting."] },
+      { id: "a1-s5-w7", en: "phone", fa: "تلفن", examples: ["My phone is on the table.", "She is talking on the phone."] },
+      { id: "a1-s5-w8", en: "key", fa: "کلید", examples: ["I lost my key.", "This is the key to the door."] },
+      { id: "a1-s5-w9", en: "bag", fa: "کیف", examples: ["She carries a bag to school.", "My bag is very heavy."] },
+      { id: "a1-s5-w10", en: "clock", fa: "ساعت", examples: ["The clock is on the wall.", "Look at the clock, it's late."] }
+    ]
   }
-  // Sets 5–30 go here with the same structure.
+  // Sets 6–30 go here with the same structure.
 ];
