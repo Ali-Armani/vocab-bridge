@@ -32,8 +32,24 @@ const vocabLevels = {
         { id: "a1-s2-w9", en: "fish", fa: "ماهی", examples: ["We had fish for lunch.", "He likes to eat fish."] },
         { id: "a1-s2-w10", en: "chicken", fa: "مرغ", examples: ["She is cooking chicken tonight.", "Chicken is my favorite food."] }
       ]
+    },
+    {
+      id: "a1-set-3",
+      name: { en: "Set 3: Numbers 1-10", fa: "مجموعه ۳: اعداد ۱ تا ۱۰" },
+      words: [
+        { id: "a1-s3-w1", en: "one", fa: "یک", examples: ["I have one brother.", "She has one apple."] },
+        { id: "a1-s3-w2", en: "two", fa: "دو", examples: ["I have two hands.", "There are two books on the table."] },
+        { id: "a1-s3-w3", en: "three", fa: "سه", examples: ["We waited three minutes.", "She has three cats."] },
+        { id: "a1-s3-w4", en: "four", fa: "چهار", examples: ["The table has four legs.", "There are four seasons in a year."] },
+        { id: "a1-s3-w5", en: "five", fa: "پنج", examples: ["I have five fingers on one hand.", "We waited five minutes."] },
+        { id: "a1-s3-w6", en: "six", fa: "شش", examples: ["The class starts at six.", "She has six pencils."] },
+        { id: "a1-s3-w7", en: "seven", fa: "هفت", examples: ["There are seven days in a week.", "He has seven books."] },
+        { id: "a1-s3-w8", en: "eight", fa: "هشت", examples: ["The shop opens at eight.", "She has eight cousins."] },
+        { id: "a1-s3-w9", en: "nine", fa: "نه", examples: ["The bus leaves at nine.", "We have nine chairs."] },
+        { id: "a1-s3-w10", en: "ten", fa: "ده", examples: ["I have ten fingers.", "There are ten students in the class."] }
+      ]
     }
-    // Sets 3–30 go here with the same structure.
+    // Sets 4–30 go here with the same structure.
   ]
 };
 
