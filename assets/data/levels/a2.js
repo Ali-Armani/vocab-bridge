@@ -31,6 +31,22 @@ const vocabLevelA2 = [
       { id: "a2-s2-w9", en: "month", fa: "ماه (تقویمی)", examples: ["This month is very busy.", "We travel every month."] },
       { id: "a2-s2-w10", en: "year", fa: "سال", examples: ["I moved here last year.", "This year has been great."] }
     ]
+  },
+  {
+    id: "a2-set-3",
+    name: { en: "Set 3: Weather", fa: "مجموعه ۳: آب‌وهوا" },
+    words: [
+      { id: "a2-s3-w1", en: "sunny", fa: "آفتابی", examples: ["It is sunny today.", "We had a sunny weekend."] },
+      { id: "a2-s3-w2", en: "rainy", fa: "بارانی", examples: ["It is a rainy day.", "I don't like rainy weather."] },
+      { id: "a2-s3-w3", en: "cloudy", fa: "ابری", examples: ["The sky is cloudy today.", "It was cloudy all morning."] },
+      { id: "a2-s3-w4", en: "windy", fa: "بادی", examples: ["It is very windy outside.", "The windy weather broke the tree."] },
+      { id: "a2-s3-w5", en: "foggy", fa: "مه‌آلود", examples: ["It was too foggy to drive.", "The morning was foggy."] },
+      { id: "a2-s3-w6", en: "hot", fa: "گرم", examples: ["It is very hot in summer.", "The soup is too hot."] },
+      { id: "a2-s3-w7", en: "cold", fa: "سرد", examples: ["It is cold in winter.", "The water is very cold."] },
+      { id: "a2-s3-w8", en: "warm", fa: "گرم (ملایم)", examples: ["The weather is warm today.", "She wore a warm coat."] },
+      { id: "a2-s3-w9", en: "cool", fa: "خنک", examples: ["The evening was cool and pleasant.", "I like cool weather."] },
+      { id: "a2-s3-w10", en: "humid", fa: "مرطوب", examples: ["The weather is humid in summer.", "It feels humid today."] }
+    ]
   }
-  // Sets 3–30 go here with the same structure.
+  // Sets 4–30 go here with the same structure.
 ];
