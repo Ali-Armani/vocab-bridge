@@ -47,6 +47,22 @@ const vocabLevelA2 = [
       { id: "a2-s3-w9", en: "cool", fa: "خنک", examples: ["The evening was cool and pleasant.", "I like cool weather."] },
       { id: "a2-s3-w10", en: "humid", fa: "مرطوب", examples: ["The weather is humid in summer.", "It feels humid today."] }
     ]
+  },
+  {
+    id: "a2-set-4",
+    name: { en: "Set 4: Transportation", fa: "مجموعه ۴: وسایل حمل‌ونقل" },
+    words: [
+      { id: "a2-s4-w1", en: "car", fa: "ماشین", examples: ["I drive my car to work.", "Her car is red."] },
+      { id: "a2-s4-w2", en: "bus", fa: "اتوبوس", examples: ["I take the bus to school.", "The bus was late today."] },
+      { id: "a2-s4-w3", en: "train", fa: "قطار", examples: ["We traveled by train.", "The train arrives at noon."] },
+      { id: "a2-s4-w4", en: "airplane", fa: "هواپیما", examples: ["We flew by airplane.", "The airplane landed safely."] },
+      { id: "a2-s4-w5", en: "bicycle", fa: "دوچرخه", examples: ["He rides his bicycle every day.", "I bought a new bicycle."] },
+      { id: "a2-s4-w6", en: "taxi", fa: "تاکسی", examples: ["We took a taxi to the airport.", "Call a taxi, please."] },
+      { id: "a2-s4-w7", en: "ship", fa: "کشتی", examples: ["The ship crossed the sea.", "We traveled on a large ship."] },
+      { id: "a2-s4-w8", en: "motorcycle", fa: "موتورسیکلت", examples: ["He rides a motorcycle to work.", "The motorcycle is very fast."] },
+      { id: "a2-s4-w9", en: "subway", fa: "مترو", examples: ["I take the subway every morning.", "The subway is fast and cheap."] },
+      { id: "a2-s4-w10", en: "ticket", fa: "بلیط", examples: ["I bought a train ticket.", "Where is your ticket?"] }
+    ]
   }
-  // Sets 4–30 go here with the same structure.
+  // Sets 5–30 go here with the same structure.
 ];
