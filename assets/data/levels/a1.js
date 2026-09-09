@@ -158,6 +158,22 @@ const vocabLevelA1 = [
       { id: "a1-s13-w9", en: "listen", fa: "گوش دادن", examples: ["I listen to music every day.", "Please listen carefully."] },
       { id: "a1-s13-w10", en: "watch", fa: "تماشا کردن", examples: ["We watch movies on Fridays.", "I watch the news every evening."] }
     ]
+  },
+  {
+    id: "a1-set-14",
+    name: { en: "Set 14: Adjectives — Opposites", fa: "مجموعه ۱۴: صفت‌های متضاد" },
+    words: [
+      { id: "a1-s14-w1", en: "big", fa: "بزرگ", examples: ["That is a big house.", "We need a big table."] },
+      { id: "a1-s14-w2", en: "small", fa: "کوچک", examples: ["This is a small room.", "She has a small dog."] },
+      { id: "a1-s14-w3", en: "tall", fa: "بلند قد", examples: ["He is very tall.", "The building is tall."] },
+      { id: "a1-s14-w4", en: "short", fa: "کوتاه", examples: ["She is short.", "The road is very short."] },
+      { id: "a1-s14-w5", en: "fast", fa: "سریع", examples: ["The car is very fast.", "He runs fast."] },
+      { id: "a1-s14-w6", en: "slow", fa: "آهسته", examples: ["The bus is very slow today.", "She walks slowly."] },
+      { id: "a1-s14-w7", en: "strong", fa: "قوی", examples: ["He is very strong.", "The coffee is strong."] },
+      { id: "a1-s14-w8", en: "weak", fa: "ضعیف", examples: ["I feel weak today.", "The signal is weak."] },
+      { id: "a1-s14-w9", en: "new", fa: "جدید", examples: ["I bought a new phone.", "This is a new book."] },
+      { id: "a1-s14-w10", en: "old", fa: "قدیمی", examples: ["This is an old house.", "He has an old car."] }
+    ]
   }
-  // Sets 14–30 go here with the same structure.
+  // Sets 15–30 go here with the same structure.
 ];
