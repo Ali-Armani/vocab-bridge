@@ -78,6 +78,22 @@ const vocabLevelA1 = [
       { id: "a1-s5-w9", en: "bag", fa: "کیف", examples: ["She carries a bag to school.", "My bag is very heavy."] },
       { id: "a1-s5-w10", en: "clock", fa: "ساعت", examples: ["The clock is on the wall.", "Look at the clock, it's late."] }
     ]
+  },
+  {
+    id: "a1-set-6",
+    name: { en: "Set 6: Body Parts", fa: "مجموعه ۶: اعضای بدن" },
+    words: [
+      { id: "a1-s6-w1", en: "head", fa: "سر", examples: ["My head hurts a little.", "She nodded her head."] },
+      { id: "a1-s6-w2", en: "hand", fa: "دست", examples: ["Wash your hands before eating.", "He held her hand."] },
+      { id: "a1-s6-w3", en: "eye", fa: "چشم", examples: ["She has beautiful eyes.", "Close your eyes and rest."] },
+      { id: "a1-s6-w4", en: "ear", fa: "گوش", examples: ["My ear hurts today.", "He whispered in her ear."] },
+      { id: "a1-s6-w5", en: "nose", fa: "بینی", examples: ["My nose is cold.", "The dog smelled with its nose."] },
+      { id: "a1-s6-w6", en: "mouth", fa: "دهان", examples: ["Open your mouth, please.", "He covered his mouth and laughed."] },
+      { id: "a1-s6-w7", en: "leg", fa: "پا", examples: ["My leg is tired from walking.", "The chair has four legs."] },
+      { id: "a1-s6-w8", en: "foot", fa: "پا (کف پا)", examples: ["My foot hurts after running.", "He has big feet."] },
+      { id: "a1-s6-w9", en: "hair", fa: "مو", examples: ["She has long hair.", "His hair is black."] },
+      { id: "a1-s6-w10", en: "arm", fa: "بازو", examples: ["He broke his arm last year.", "She raised her arm."] }
+    ]
   }
-  // Sets 6–30 go here with the same structure.
+  // Sets 7–30 go here with the same structure.
 ];
