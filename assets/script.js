@@ -166,7 +166,7 @@ function removeWrongWord(wordId) {
 document.getElementById("reviewMistakesBtn").addEventListener("click", () => {
   const wrongIds = getWrongWordIds();
   if (wrongIds.length === 0) {
-    alert("No mistakes saved yet.");
+    alert("No mistakes saved yet.\n فعلا واژه‌ی «نیازمند تمرین» وارد نشده.");
     return;
   }
   const reviewWords = wrongIds.map((id) => wordLookup[id]).filter(Boolean);
