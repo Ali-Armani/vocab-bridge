@@ -174,6 +174,22 @@ const vocabLevelA1 = [
       { id: "a1-s14-w9", en: "new", fa: "جدید", examples: ["I bought a new phone.", "This is a new book."] },
       { id: "a1-s14-w10", en: "old", fa: "قدیمی", examples: ["This is an old house.", "He has an old car."] }
     ]
+  },
+  {
+    id: "a1-set-15",
+    name: { en: "Set 15: School Items", fa: "مجموعه ۱۵: وسایل مدرسه" },
+    words: [
+      { id: "a1-s15-w1", en: "pencil", fa: "مداد", examples: ["I write with a pencil.", "She has a yellow pencil."] },
+      { id: "a1-s15-w2", en: "pen", fa: "خودکار", examples: ["I write letters with a pen.", "This pen is blue."] },
+      { id: "a1-s15-w3", en: "notebook", fa: "دفتر", examples: ["I write notes in my notebook.", "She has a red notebook."] },
+      { id: "a1-s15-w4", en: "eraser", fa: "پاک‌کن", examples: ["Can I borrow your eraser?", "I lost my eraser."] },
+      { id: "a1-s15-w5", en: "ruler", fa: "خط‌کش", examples: ["I use a ruler to draw lines.", "The ruler is thirty centimeters long."] },
+      { id: "a1-s15-w6", en: "scissors", fa: "قیچی", examples: ["I cut the paper with scissors.", "Please pass me the scissors."] },
+      { id: "a1-s15-w7", en: "chalk", fa: "گچ", examples: ["The teacher writes with chalk.", "We have white and yellow chalk."] },
+      { id: "a1-s15-w8", en: "board", fa: "تخته", examples: ["The teacher writes on the board.", "Look at the board, please."] },
+      { id: "a1-s15-w9", en: "glue", fa: "چسب", examples: ["I use glue to stick the paper.", "The glue is very strong."] },
+      { id: "a1-s15-w10", en: "backpack", fa: "کوله‌پشتی", examples: ["I carry my books in a backpack.", "She bought a new backpack."] }
+    ]
   }
-  // Sets 15–30 go here with the same structure.
+  // Sets 16–30 go here with the same structure.
 ];
