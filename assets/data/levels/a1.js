@@ -46,6 +46,22 @@ const vocabLevelA1 = [
       { id: "a1-s3-w9", en: "nine", fa: "نه", examples: ["The bus leaves at nine.", "We have nine chairs."] },
       { id: "a1-s3-w10", en: "ten", fa: "ده", examples: ["I have ten fingers.", "There are ten students in the class."] }
     ]
+  },
+  {
+    id: "a1-set-4",
+    name: { en: "Set 4: Nature", fa: "مجموعه ۴: طبیعت" },
+    words: [
+      { id: "a1-s4-w1", en: "sun", fa: "خورشید", examples: ["The sun is very bright today.", "We sat under the sun."] },
+      { id: "a1-s4-w2", en: "sky", fa: "آسمان", examples: ["The sky is blue today.", "Birds fly in the sky."] },
+      { id: "a1-s4-w3", en: "mountain", fa: "کوه", examples: ["We climbed the mountain.", "The mountain is very tall."] },
+      { id: "a1-s4-w4", en: "tree", fa: "درخت", examples: ["There is a tree near my house.", "Birds live in the tree."] },
+      { id: "a1-s4-w5", en: "sea", fa: "دریا", examples: ["We swim in the sea.", "The sea is very deep."] },
+      { id: "a1-s4-w6", en: "star", fa: "ستاره", examples: ["I can see a star in the sky.", "The stars shine at night."] },
+      { id: "a1-s4-w7", en: "moon", fa: "ماه", examples: ["The moon is bright tonight.", "We looked at the moon."] },
+      { id: "a1-s4-w8", en: "rain", fa: "باران", examples: ["It is raining outside.", "I like the sound of rain."] },
+      { id: "a1-s4-w9", en: "snow", fa: "برف", examples: ["The snow is white and cold.", "Children play in the snow."] },
+      { id: "a1-s4-w10", en: "flower", fa: "گل", examples: ["She gave me a flower.", "The flower smells nice."] }
+    ]
   }
-  // Sets 4–30 go here with the same structure.
+  // Sets 5–30 go here with the same structure.
 ];
