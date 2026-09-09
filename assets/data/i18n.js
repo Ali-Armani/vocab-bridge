@@ -23,8 +23,8 @@ const uiText = {
     backToSets: "← Sets",
     knewIt: "I knew it ✓",
     didntKnow: "I didn't know ✗",
-    correctCount: (count) => `Correct: ${count}`,
-    wrongCount: (count) => `Wrong: ${count}`
+    correctCount: (count) => `Learned: ${count}`,
+    wrongCount: (count) => `Learning: ${count}`
   },
   fa: {
     tagline: "آموزش انگلیسی",
@@ -41,7 +41,7 @@ const uiText = {
     backToSets: "← مجموعه‌ها",
     knewIt: "بلد بودم ✓",
     didntKnow: "بلد نبودم ✗",
-    correctCount: (count) => `درست: ${toPersianDigits(count)}`,
-    wrongCount: (count) => `غلط: ${toPersianDigits(count)}`
+    correctCount: (count) => `یادگرفته: ${toPersianDigits(count)}`,
+    wrongCount: (count) => `یادگرفتنی: ${toPersianDigits(count)}`
   }
-};
+}
