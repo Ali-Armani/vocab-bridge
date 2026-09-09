@@ -1,7 +1,7 @@
 // ---------- Combine all level files into one lookup ----------
 const vocabLevels = {
-  A1: vocabLevelA1
-  // A2: vocabLevelA2,
+  A1: vocabLevelA1,
+  A2: vocabLevelA2
   // B1: vocabLevelB1,
   // B2: vocabLevelB2,
   // C1: vocabLevelC1,
