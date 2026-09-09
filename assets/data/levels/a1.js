@@ -94,6 +94,22 @@ const vocabLevelA1 = [
       { id: "a1-s6-w9", en: "hair", fa: "مو", examples: ["She has long hair.", "His hair is black."] },
       { id: "a1-s6-w10", en: "arm", fa: "بازو", examples: ["He broke his arm last year.", "She raised her arm."] }
     ]
+  },
+  {
+    id: "a1-set-7",
+    name: { en: "Set 7: Days of the Week", fa: "مجموعه ۷: روزهای هفته" },
+    words: [
+      { id: "a1-s7-w1", en: "Sunday", fa: "یکشنبه", examples: ["I go to church on Sunday.", "Sunday is the first day for us."] },
+      { id: "a1-s7-w2", en: "Monday", fa: "دوشنبه", examples: ["School starts on Monday.", "I don't like Mondays."] },
+      { id: "a1-s7-w3", en: "Tuesday", fa: "سه‌شنبه", examples: ["We have a meeting on Tuesday.", "Tuesday is a busy day."] },
+      { id: "a1-s7-w4", en: "Wednesday", fa: "چهارشنبه", examples: ["I have class on Wednesday.", "Wednesday is in the middle of the week."] },
+      { id: "a1-s7-w5", en: "Thursday", fa: "پنجشنبه", examples: ["We go shopping on Thursday.", "See you on Thursday."] },
+      { id: "a1-s7-w6", en: "Friday", fa: "جمعه", examples: ["Friday is a holiday.", "I love Fridays."] },
+      { id: "a1-s7-w7", en: "Saturday", fa: "شنبه", examples: ["We work on Saturday.", "Saturday is a nice day to relax."] },
+      { id: "a1-s7-w8", en: "day", fa: "روز", examples: ["Today is a beautiful day.", "Have a nice day."] },
+      { id: "a1-s7-w9", en: "week", fa: "هفته", examples: ["I study every week.", "This week is very busy."] },
+      { id: "a1-s7-w10", en: "weekend", fa: "آخر هفته", examples: ["We rest on the weekend.", "What are your plans for the weekend?"] }
+    ]
   }
-  // Sets 7–30 go here with the same structure.
+  // Sets 8–30 go here with the same structure.
 ];
