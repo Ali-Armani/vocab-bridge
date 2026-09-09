@@ -79,6 +79,22 @@ const vocabLevelA2 = [
       { id: "a2-s5-w9", en: "wallet", fa: "کیف پول", examples: ["I left my wallet at home.", "Her wallet is full of cards."] },
       { id: "a2-s5-w10", en: "coin", fa: "سکه", examples: ["I found a coin on the ground.", "He collects old coins."] }
     ]
+  },
+  {
+    id: "a2-set-6",
+    name: { en: "Set 6: Jobs & Occupations", fa: "مجموعه ۶: مشاغل" },
+    words: [
+      { id: "a2-s6-w1", en: "doctor", fa: "پزشک", examples: ["The doctor examined the patient.", "She wants to be a doctor."] },
+      { id: "a2-s6-w2", en: "engineer", fa: "مهندس", examples: ["He works as an engineer.", "The engineer designed the bridge."] },
+      { id: "a2-s6-w3", en: "nurse", fa: "پرستار", examples: ["The nurse helped the patient.", "She trained to be a nurse."] },
+      { id: "a2-s6-w4", en: "driver", fa: "راننده", examples: ["The taxi driver was very kind.", "He works as a bus driver."] },
+      { id: "a2-s6-w5", en: "farmer", fa: "کشاورز", examples: ["The farmer grows vegetables.", "His father is a farmer."] },
+      { id: "a2-s6-w6", en: "lawyer", fa: "وکیل", examples: ["She works as a lawyer.", "The lawyer explained the case."] },
+      { id: "a2-s6-w7", en: "artist", fa: "هنرمند", examples: ["The artist painted a beautiful picture.", "He is a famous artist."] },
+      { id: "a2-s6-w8", en: "dentist", fa: "دندان‌پزشک", examples: ["I have an appointment with the dentist.", "The dentist checked my teeth."] },
+      { id: "a2-s6-w9", en: "pilot", fa: "خلبان", examples: ["The pilot flew the plane safely.", "He dreams of becoming a pilot."] },
+      { id: "a2-s6-w10", en: "actor", fa: "بازیگر", examples: ["The actor performed very well.", "She is a talented actor."] }
+    ]
   }
-  // Sets 6–30 go here with the same structure.
+  // Sets 7–30 go here with the same structure.
 ];
