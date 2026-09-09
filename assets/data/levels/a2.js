@@ -15,6 +15,22 @@ const vocabLevelA2 = [
       { id: "a2-s1-w9", en: "worried", fa: "نگران", examples: ["She is worried about the exam.", "Don't be worried, it will be okay."] },
       { id: "a2-s1-w10", en: "surprised", fa: "متعجب", examples: ["I was surprised by the news.", "He looked surprised when he saw us."] }
     ]
+  },
+  {
+    id: "a2-set-2",
+    name: { en: "Set 2: Daily Routine & Time", fa: "مجموعه ۲: روال روزانه و زمان" },
+    words: [
+      { id: "a2-s2-w1", en: "morning", fa: "صبح", examples: ["I go for a walk every morning.", "She wakes up early in the morning."] },
+      { id: "a2-s2-w2", en: "afternoon", fa: "بعدازظهر", examples: ["We meet in the afternoon.", "The shop closes in the afternoon."] },
+      { id: "a2-s2-w3", en: "evening", fa: "عصر", examples: ["I relax in the evening.", "We had dinner in the evening."] },
+      { id: "a2-s2-w4", en: "night", fa: "شب", examples: ["I sleep at night.", "The city is quiet at night."] },
+      { id: "a2-s2-w5", en: "today", fa: "امروز", examples: ["I am busy today.", "Today is a beautiful day."] },
+      { id: "a2-s2-w6", en: "tomorrow", fa: "فردا", examples: ["We will meet tomorrow.", "Tomorrow is a holiday."] },
+      { id: "a2-s2-w7", en: "yesterday", fa: "دیروز", examples: ["I saw her yesterday.", "Yesterday was very cold."] },
+      { id: "a2-s2-w8", en: "week", fa: "هفته", examples: ["I work five days a week.", "See you next week."] },
+      { id: "a2-s2-w9", en: "month", fa: "ماه (تقویمی)", examples: ["This month is very busy.", "We travel every month."] },
+      { id: "a2-s2-w10", en: "year", fa: "سال", examples: ["I moved here last year.", "This year has been great."] }
+    ]
   }
-  // Sets 2–30 go here with the same structure.
+  // Sets 3–30 go here with the same structure.
 ];
