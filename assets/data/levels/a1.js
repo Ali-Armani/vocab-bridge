@@ -126,6 +126,22 @@ const vocabLevelA1 = [
       { id: "a1-s9-w9", en: "pink", fa: "صورتی", examples: ["Her room is pink.", "I bought a pink bag."] },
       { id: "a1-s9-w10", en: "brown", fa: "قهوه‌ای", examples: ["The dog is brown.", "He has brown eyes."] }
     ]
+  },
+  {
+    id: "a1-set-10",
+    name: { en: "Set 10: Animals", fa: "مجموعه ۱۰: حیوانات" },
+    words: [
+      { id: "a1-s10-w1", en: "dog", fa: "سگ", examples: ["The dog is playing in the yard.", "I have a small dog."] },
+      { id: "a1-s10-w2", en: "cat", fa: "گربه", examples: ["The cat is sleeping on the sofa.", "She has a white cat."] },
+      { id: "a1-s10-w3", en: "bird", fa: "پرنده", examples: ["The bird is singing in the tree.", "I saw a blue bird."] },
+      { id: "a1-s10-w4", en: "fish", fa: "ماهی", examples: ["The fish swims in the water.", "We have three fish at home."] },
+      { id: "a1-s10-w5", en: "horse", fa: "اسب", examples: ["The horse runs very fast.", "He rides a horse every morning."] },
+      { id: "a1-s10-w6", en: "cow", fa: "گاو", examples: ["The cow gives us milk.", "There is a cow in the farm."] },
+      { id: "a1-s10-w7", en: "sheep", fa: "گوسفند", examples: ["The sheep is white and soft.", "We saw many sheep on the farm."] },
+      { id: "a1-s10-w8", en: "lion", fa: "شیر (حیوان)", examples: ["The lion is very strong.", "We saw a lion at the zoo."] },
+      { id: "a1-s10-w9", en: "elephant", fa: "فیل", examples: ["The elephant is very big.", "We saw an elephant at the zoo."] },
+      { id: "a1-s10-w10", en: "rabbit", fa: "خرگوش", examples: ["The rabbit is very fast.", "She has a small rabbit."] }
+    ]
   }
-  // Sets 10–30 go here with the same structure.
+  // Sets 11–30 go here with the same structure.
 ];
