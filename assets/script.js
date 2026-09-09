@@ -208,8 +208,8 @@ function updateProgressBar() {
 
 // ---------- Result card text ----------
 function updateResultCard() {
-  correctCountEl.textContent = `Learned: ${correctCount}`;
-  wrongCountEl.textContent = `Learning: ${wrongCount}`;
+  correctCountEl.textContent = uiText[currentLang].correctCount(correctCount);
+  wrongCountEl.textContent = uiText[currentLang].wrongCount(wrongCount);
   updateDonutChart();
 }
 
