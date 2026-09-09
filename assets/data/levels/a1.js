@@ -110,6 +110,22 @@ const vocabLevelA1 = [
       { id: "a1-s7-w9", en: "week", fa: "هفته", examples: ["I study every week.", "This week is very busy."] },
       { id: "a1-s7-w10", en: "weekend", fa: "آخر هفته", examples: ["We rest on the weekend.", "What are your plans for the weekend?"] }
     ]
+  },
+  {
+    id: "a1-set-8",
+    name: { en: "Set 8: Months of the Year", fa: "مجموعه ۸: ماه‌های سال" },
+    words: [
+      { id: "a1-s8-w1", en: "January", fa: "ژانویه", examples: ["My birthday is in January.", "January is very cold."] },
+      { id: "a1-s8-w2", en: "February", fa: "فوریه", examples: ["February is a short month.", "We had snow in February."] },
+      { id: "a1-s8-w3", en: "March", fa: "مارس", examples: ["Spring starts in March.", "We travel in March."] },
+      { id: "a1-s8-w4", en: "April", fa: "آوریل", examples: ["It rains a lot in April.", "April has thirty days."] },
+      { id: "a1-s8-w5", en: "May", fa: "مه", examples: ["Flowers bloom in May.", "We had a party in May."] },
+      { id: "a1-s8-w6", en: "June", fa: "ژوئن", examples: ["School ends in June.", "June is the start of summer."] },
+      { id: "a1-s8-w7", en: "July", fa: "ژوئیه", examples: ["July is very hot.", "We go to the beach in July."] },
+      { id: "a1-s8-w8", en: "August", fa: "اوت", examples: ["August is the hottest month.", "We are on holiday in August."] },
+      { id: "a1-s8-w9", en: "September", fa: "سپتامبر", examples: ["School starts in September.", "September is a busy month."] },
+      { id: "a1-s8-w10", en: "October", fa: "اکتبر", examples: ["The leaves fall in October.", "We celebrate in October."] }
+    ]
   }
-  // Sets 8–30 go here with the same structure.
+  // Sets 9–30 go here with the same structure.
 ];
