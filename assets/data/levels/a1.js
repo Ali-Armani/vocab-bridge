@@ -160,6 +160,22 @@ const vocabLevelA1 = [
     ]
   },
   {
+    id: "a1-set-11",
+    name: { en: "Set 11: Clothes", fa: "مجموعه ۱۱: لباس‌ها" },
+    words: [
+      { id: "a1-s11-w1", en: "shirt", fa: "پیراهن", examples: ["He is wearing a blue shirt.", "I bought a new shirt."] },
+      { id: "a1-s11-w2", en: "pants", fa: "شلوار", examples: ["These pants are too long.", "She wore black pants."] },
+      { id: "a1-s11-w3", en: "shoes", fa: "کفش", examples: ["My shoes are very comfortable.", "He bought new shoes."] },
+      { id: "a1-s11-w4", en: "hat", fa: "کلاه", examples: ["She is wearing a red hat.", "I need a hat for the sun."] },
+      { id: "a1-s11-w5", en: "jacket", fa: "ژاکت", examples: ["He wore a jacket because it was cold.", "I like your new jacket."] },
+      { id: "a1-s11-w6", en: "dress", fa: "لباس (زنانه)", examples: ["She wore a beautiful dress.", "I bought a green dress."] },
+      { id: "a1-s11-w7", en: "socks", fa: "جوراب", examples: ["My socks are warm.", "He lost one of his socks."] },
+      { id: "a1-s11-w8", en: "skirt", fa: "دامن", examples: ["She is wearing a long skirt.", "I bought a new skirt."] },
+      { id: "a1-s11-w9", en: "gloves", fa: "دستکش", examples: ["I wear gloves in winter.", "She lost her gloves."] },
+      { id: "a1-s11-w10", en: "scarf", fa: "شال گردن", examples: ["He wore a warm scarf.", "She bought a red scarf."] }
+    ]
+  },
+  {
     id: "a1-set-13",
     name: { en: "Set 13: Basic Verbs", fa: "مجموعه ۱۳: فعل‌های پایه" },
     words: [
