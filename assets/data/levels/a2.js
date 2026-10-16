@@ -161,6 +161,22 @@ const vocabLevelA2 = [
     ]
   },
   {
+    id: "a2-set-11",
+    name: { en: "Set 11: Restaurant & Ordering Food", fa: "مجموعه ۱۱: رستوران و سفارش غذا" },
+    words: [
+      { id: "a2-s11-w1", en: "menu", fa: "منو", examples: ["Can I see the menu, please?", "The menu has many dishes."] },
+      { id: "a2-s11-w2", en: "waiter", fa: "پیشخدمت", examples: ["The waiter brought our food.", "We asked the waiter for water."] },
+      { id: "a2-s11-w3", en: "order", fa: "سفارش دادن", examples: ["I would like to order pasta.", "She ordered a cup of coffee."] },
+      { id: "a2-s11-w4", en: "reservation", fa: "رزرو", examples: ["We made a reservation for two.", "Do you have a reservation?"] },
+      { id: "a2-s11-w5", en: "delicious", fa: "خوشمزه", examples: ["This soup is delicious.", "The cake tasted delicious."] },
+      { id: "a2-s11-w6", en: "spicy", fa: "تند (طعم)", examples: ["This food is very spicy.", "I don't like spicy food."] },
+      { id: "a2-s11-w7", en: "dessert", fa: "دسر", examples: ["Would you like some dessert?", "The dessert was sweet and cold."] },
+      { id: "a2-s11-w8", en: "tip", fa: "انعام", examples: ["We left a tip for the waiter.", "It is common to give a tip."] },
+      { id: "a2-s11-w9", en: "receipt", fa: "رسید", examples: ["Can I have the receipt, please?", "She kept the receipt for the shop."] },
+      { id: "a2-s11-w10", en: "table for two", fa: "میز دو نفره", examples: ["We need a table for two.", "They booked a table for two."] }
+    ]
+  },
+  {
     id: "a2-set-15",
     name: { en: "Set 15: Personality Adjectives", fa: "مجموعه ۱۵: صفت‌های شخصیتی" },
     words: [
