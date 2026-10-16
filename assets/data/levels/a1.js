@@ -176,6 +176,22 @@ const vocabLevelA1 = [
     ]
   },
   {
+    id: "a1-set-12",
+    name: { en: "Set 12: Places in Town", fa: "مجموعه ۱۲: مکان‌های شهر" },
+    words: [
+      { id: "a1-s12-w1", en: "school", fa: "مدرسه", examples: ["I go to school every day.", "The school is near my house."] },
+      { id: "a1-s12-w2", en: "hospital", fa: "بیمارستان", examples: ["She works at the hospital.", "The hospital is very big."] },
+      { id: "a1-s12-w3", en: "park", fa: "پارک", examples: ["We play in the park.", "The park is very quiet."] },
+      { id: "a1-s12-w4", en: "restaurant", fa: "رستوران", examples: ["We had dinner at a restaurant.", "This restaurant is very popular."] },
+      { id: "a1-s12-w5", en: "bank", fa: "بانک", examples: ["I need to go to the bank.", "The bank opens at nine."] },
+      { id: "a1-s12-w6", en: "station", fa: "ایستگاه", examples: ["The train station is close by.", "We waited at the bus station."] },
+      { id: "a1-s12-w7", en: "library", fa: "کتابخانه", examples: ["I study at the library.", "The library is very quiet."] },
+      { id: "a1-s12-w8", en: "supermarket", fa: "سوپرمارکت", examples: ["We buy food at the supermarket.", "The supermarket is open late."] },
+      { id: "a1-s12-w9", en: "church", fa: "کلیسا", examples: ["They go to church on Sunday.", "The church is very old."] },
+      { id: "a1-s12-w10", en: "hotel", fa: "هتل", examples: ["We stayed at a nice hotel.", "The hotel is near the beach."] }
+    ]
+  },
+  {
     id: "a1-set-13",
     name: { en: "Set 13: Basic Verbs", fa: "مجموعه ۱۳: فعل‌های پایه" },
     words: [
