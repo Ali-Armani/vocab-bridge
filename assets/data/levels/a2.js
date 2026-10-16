@@ -145,20 +145,20 @@ const vocabLevelA2 = [
     ]
   },
   {
-    id: "a2-set-12",
-    name: { en: "Set 12: Travel & Holidays", fa: "مجموعه ۱۲: سفر و تعطیلات" },
+    id: "a2-set-13",
+    name: { en: "Set 13: Directions & Locations", fa: "مجموعه ۱۳: مسیر و جهت‌ها" },
     words: [
-      { id: "a2-s12-w1", en: "passport", fa: "گذرنامه", examples: ["Don't forget your passport.", "I renewed my passport last month."] },
-      { id: "a2-s12-w2", en: "luggage", fa: "چمدان", examples: ["My luggage is very heavy.", "We checked our luggage at the airport."] },
-      { id: "a2-s12-w3", en: "vacation", fa: "تعطیلات", examples: ["We are on vacation this week.", "I need a vacation."] },
-      { id: "a2-s12-w4", en: "destination", fa: "مقصد", examples: ["Paris is our next destination.", "What is your travel destination?"] },
-      { id: "a2-s12-w5", en: "map", fa: "نقشه", examples: ["We used a map to find the hotel.", "Can you show me on the map?"] },
-      { id: "a2-s12-w6", en: "souvenir", fa: "سوغاتی", examples: ["I bought a souvenir for my sister.", "This shop sells nice souvenirs."] },
-      { id: "a2-s12-w7", en: "guide", fa: "راهنمای گردشگری", examples: ["Our guide showed us the old city.", "We hired a local guide."] },
-      { id: "a2-s12-w8", en: "airport", fa: "فرودگاه", examples: ["We arrived at the airport early.", "The airport was very crowded."] },
-      { id: "a2-s12-w9", en: "trip", fa: "سفر (کوتاه)", examples: ["We had a great trip to the coast.", "The trip took three hours."] },
-      { id: "a2-s12-w10", en: "abroad", fa: "خارج از کشور", examples: ["She studied abroad for a year.", "They traveled abroad last summer."] }
+      { id: "a2-s13-w1", en: "left", fa: "چپ", examples: ["Turn left at the corner.", "The bank is on the left."] },
+      { id: "a2-s13-w2", en: "right", fa: "راست", examples: ["Turn right at the light.", "The shop is on the right."] },
+      { id: "a2-s13-w3", en: "straight", fa: "مستقیم", examples: ["Go straight for two blocks.", "Walk straight and you will see it."] },
+      { id: "a2-s13-w4", en: "corner", fa: "گوشه/نبش", examples: ["The cafe is on the corner.", "Turn at the next corner."] },
+      { id: "a2-s13-w5", en: "crossroad", fa: "چهارراه", examples: ["Turn left at the crossroad.", "There is a busy crossroad near my house."] },
+      { id: "a2-s13-w6", en: "traffic light", fa: "چراغ راهنما", examples: ["Stop at the traffic light.", "The traffic light turned red."] },
+      { id: "a2-s13-w7", en: "block", fa: "بلوک (خیابانی)", examples: ["The store is two blocks away.", "Walk one more block."] },
+      { id: "a2-s13-w8", en: "direction", fa: "جهت", examples: ["We went in the wrong direction.", "Can you give me directions to the station?"] },
+      { id: "a2-s13-w9", en: "distance", fa: "فاصله", examples: ["The distance to school is short.", "What is the distance to the city center?"] },
+      { id: "a2-s13-w10", en: "nearby", fa: "نزدیک اینجا", examples: ["Is there a pharmacy nearby?", "There is a park nearby."] }
     ]
   }
-  // Sets 13–30 go here with the same structure.
+  // Sets 14–30 go here with the same structure.
 ];
