@@ -127,6 +127,22 @@ const vocabLevelA2 = [
       { id: "a2-s9-w9", en: "app", fa: "برنامه (نرم‌افزار)", examples: ["I use a language app every day.", "She installed a new app."] },
       { id: "a2-s9-w10", en: "wifi", fa: "وای‌فای", examples: ["The wifi is not working.", "What is the wifi password?"] }
     ]
+  },
+  {
+    id: "a2-set-10",
+    name: { en: "Set 10: House & Rooms", fa: "مجموعه ۱۰: خانه و اتاق‌ها" },
+    words: [
+      { id: "a2-s10-w1", en: "bedroom", fa: "اتاق خواب", examples: ["My bedroom is upstairs.", "She cleaned her bedroom."] },
+      { id: "a2-s10-w2", en: "kitchen", fa: "آشپزخانه", examples: ["We cook in the kitchen.", "The kitchen is very clean."] },
+      { id: "a2-s10-w3", en: "living room", fa: "اتاق نشیمن", examples: ["We watch TV in the living room.", "The living room is very big."] },
+      { id: "a2-s10-w4", en: "bathroom", fa: "حمام", examples: ["The bathroom is at the end of the hall.", "I need to clean the bathroom."] },
+      { id: "a2-s10-w5", en: "garage", fa: "گاراژ", examples: ["The car is in the garage.", "He fixed his bike in the garage."] },
+      { id: "a2-s10-w6", en: "garden", fa: "باغچه", examples: ["We grow flowers in the garden.", "The garden looks beautiful in spring."] },
+      { id: "a2-s10-w7", en: "roof", fa: "سقف", examples: ["The roof needs repair.", "Snow covered the roof."] },
+      { id: "a2-s10-w8", en: "floor", fa: "طبقه/کف", examples: ["My apartment is on the third floor.", "Please clean the floor."] },
+      { id: "a2-s10-w9", en: "stairs", fa: "پله‌ها", examples: ["I walked up the stairs.", "Be careful on the stairs."] },
+      { id: "a2-s10-w10", en: "balcony", fa: "بالکن", examples: ["We drink tea on the balcony.", "The balcony has a nice view."] }
+    ]
   }
-  // Sets 10–30 go here with the same structure.
+  // Sets 11–30 go here with the same structure.
 ];
