@@ -193,6 +193,22 @@ const vocabLevelA2 = [
     ]
   },
   {
+    id: "a2-set-13",
+    name: { en: "Set 13: Directions & Locations", fa: "مجموعه ۱۳: مسیر و جهت‌ها" },
+    words: [
+      { id: "a2-s13-w1", en: "left", fa: "چپ", examples: ["Turn left at the corner.", "The bank is on the left."] },
+      { id: "a2-s13-w2", en: "right", fa: "راست", examples: ["Turn right at the light.", "The shop is on the right."] },
+      { id: "a2-s13-w3", en: "straight", fa: "مستقیم", examples: ["Go straight for two blocks.", "Walk straight and you will see it."] },
+      { id: "a2-s13-w4", en: "corner", fa: "گوشه/نبش", examples: ["The cafe is on the corner.", "Turn at the next corner."] },
+      { id: "a2-s13-w5", en: "crossroad", fa: "چهارراه", examples: ["Turn left at the crossroad.", "There is a busy crossroad near my house."] },
+      { id: "a2-s13-w6", en: "traffic light", fa: "چراغ راهنما", examples: ["Stop at the traffic light.", "The traffic light turned red."] },
+      { id: "a2-s13-w7", en: "block", fa: "بلوک (خیابانی)", examples: ["The store is two blocks away.", "Walk one more block."] },
+      { id: "a2-s13-w8", en: "direction", fa: "جهت", examples: ["We went in the wrong direction.", "Can you give me directions to the station?"] },
+      { id: "a2-s13-w9", en: "distance", fa: "فاصله", examples: ["The distance to school is short.", "What is the distance to the city center?"] },
+      { id: "a2-s13-w10", en: "nearby", fa: "نزدیک اینجا", examples: ["Is there a pharmacy nearby?", "There is a park nearby."] }
+    ]
+  },
+  {
     id: "a2-set-15",
     name: { en: "Set 15: Personality Adjectives", fa: "مجموعه ۱۵: صفت‌های شخصیتی" },
     words: [
