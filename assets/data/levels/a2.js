@@ -95,6 +95,22 @@ const vocabLevelA2 = [
       { id: "a2-s6-w9", en: "pilot", fa: "خلبان", examples: ["The pilot flew the plane safely.", "He dreams of becoming a pilot."] },
       { id: "a2-s6-w10", en: "actor", fa: "بازیگر", examples: ["The actor performed very well.", "She is a talented actor."] }
     ]
+  },
+  {
+    id: "a2-set-7",
+    name: { en: "Set 7: Health & Illness", fa: "مجموعه ۷: سلامتی و بیماری" },
+    words: [
+      { id: "a2-s7-w1", en: "sick", fa: "مریض", examples: ["I feel sick today.", "She stayed home because she was sick."] },
+      { id: "a2-s7-w2", en: "headache", fa: "سردرد", examples: ["I have a headache.", "He took medicine for his headache."] },
+      { id: "a2-s7-w3", en: "fever", fa: "تب", examples: ["The child has a fever.", "She had a high fever last night."] },
+      { id: "a2-s7-w4", en: "cough", fa: "سرفه", examples: ["He has a bad cough.", "I couldn't sleep because of my cough."] },
+      { id: "a2-s7-w5", en: "medicine", fa: "دارو", examples: ["Take this medicine twice a day.", "She bought medicine from the pharmacy."] },
+      { id: "a2-s7-w6", en: "appointment", fa: "نوبت (پزشکی)", examples: ["I have a doctor's appointment tomorrow.", "She made an appointment with the dentist."] },
+      { id: "a2-s7-w7", en: "pain", fa: "درد", examples: ["I have pain in my back.", "The pain got worse at night."] },
+      { id: "a2-s7-w8", en: "rest", fa: "استراحت", examples: ["You need rest to feel better.", "He is resting at home today."] },
+      { id: "a2-s7-w9", en: "healthy", fa: "سالم", examples: ["Eating vegetables keeps you healthy.", "She lives a healthy life."] },
+      { id: "a2-s7-w10", en: "injury", fa: "آسیب‌دیدگی", examples: ["He got an injury while playing football.", "The injury needs time to heal."] }
+    ]
   }
-  // Sets 7–30 go here with the same structure.
+  // Sets 8–30 go here with the same structure.
 ];
