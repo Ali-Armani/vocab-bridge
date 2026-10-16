@@ -209,6 +209,22 @@ const vocabLevelA2 = [
     ]
   },
   {
+    id: "a2-set-14",
+    name: { en: "Set 14: Communication", fa: "مجموعه ۱۴: ارتباطات" },
+    words: [
+      { id: "a2-s14-w1", en: "call", fa: "تماس گرفتن", examples: ["I will call you tomorrow.", "She called her mother last night."] },
+      { id: "a2-s14-w2", en: "message", fa: "پیام", examples: ["I sent her a message.", "Did you read my message?"] },
+      { id: "a2-s14-w3", en: "email", fa: "ایمیل", examples: ["I will send you an email.", "Check your email, please."] },
+      { id: "a2-s14-w4", en: "reply", fa: "پاسخ دادن", examples: ["Please reply to my message.", "He replied quickly."] },
+      { id: "a2-s14-w5", en: "conversation", fa: "مکالمه", examples: ["We had a long conversation.", "The conversation was very interesting."] },
+      { id: "a2-s14-w6", en: "contact", fa: "تماس/اطلاعات ارتباطی", examples: ["Save his contact number.", "Please contact me tomorrow."] },
+      { id: "a2-s14-w7", en: "video call", fa: "تماس تصویری", examples: ["We had a video call yesterday.", "She video calls her family every week."] },
+      { id: "a2-s14-w8", en: "signal", fa: "آنتن‌دهی", examples: ["The signal is very weak here.", "I lost the signal in the tunnel."] },
+      { id: "a2-s14-w9", en: "letter", fa: "نامه", examples: ["She wrote a letter to her friend.", "I received a letter yesterday."] },
+      { id: "a2-s14-w10", en: "chat", fa: "چت کردن", examples: ["We chat every day online.", "Let's chat later."] }
+    ]
+  },
+  {
     id: "a2-set-15",
     name: { en: "Set 15: Personality Adjectives", fa: "مجموعه ۱۵: صفت‌های شخصیتی" },
     words: [
