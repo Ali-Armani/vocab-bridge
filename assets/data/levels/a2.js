@@ -113,6 +113,22 @@ const vocabLevelA2 = [
     ]
   },
   {
+    id: "a2-set-8",
+    name: { en: "Set 8: Hobbies & Free Time", fa: "مجموعه ۸: سرگرمی و اوقات فراغت" },
+    words: [
+      { id: "a2-s8-w1", en: "hobby", fa: "سرگرمی", examples: ["Reading is my favorite hobby.", "What is your hobby?"] },
+      { id: "a2-s8-w2", en: "painting", fa: "نقاشی", examples: ["She enjoys painting in her free time.", "His painting was beautiful."] },
+      { id: "a2-s8-w3", en: "photography", fa: "عکاسی", examples: ["Photography is his passion.", "She takes a photography class."] },
+      { id: "a2-s8-w4", en: "gardening", fa: "باغبانی", examples: ["My father loves gardening.", "Gardening keeps her relaxed."] },
+      { id: "a2-s8-w5", en: "collecting", fa: "جمع‌آوری کردن", examples: ["He enjoys collecting old coins.", "Collecting stamps is a fun hobby."] },
+      { id: "a2-s8-w6", en: "cooking", fa: "آشپزی", examples: ["Cooking is a relaxing hobby for me.", "She learned cooking from her mother."] },
+      { id: "a2-s8-w7", en: "camping", fa: "کمپینگ", examples: ["We go camping every summer.", "Camping in the mountains is fun."] },
+      { id: "a2-s8-w8", en: "chess", fa: "شطرنج", examples: ["He plays chess every evening.", "Chess is a game of thinking."] },
+      { id: "a2-s8-w9", en: "puzzle", fa: "پازل", examples: ["She likes solving puzzles.", "This puzzle took me an hour."] },
+      { id: "a2-s8-w10", en: "free time", fa: "اوقات فراغت", examples: ["What do you do in your free time?", "I read books in my free time."] }
+    ]
+  },
+  {
     id: "a2-set-9",
     name: { en: "Set 9: Technology & Devices", fa: "مجموعه ۹: فناوری و دستگاه‌ها" },
     words: [
