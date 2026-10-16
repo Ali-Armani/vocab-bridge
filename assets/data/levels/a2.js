@@ -113,20 +113,20 @@ const vocabLevelA2 = [
     ]
   },
   {
-    id: "a2-set-8",
-    name: { en: "Set 8: Hobbies & Free Time", fa: "مجموعه ۸: سرگرمی و اوقات فراغت" },
+    id: "a2-set-9",
+    name: { en: "Set 9: Technology & Devices", fa: "مجموعه ۹: فناوری و دستگاه‌ها" },
     words: [
-      { id: "a2-s8-w1", en: "hobby", fa: "سرگرمی", examples: ["Reading is my favorite hobby.", "What is your hobby?"] },
-      { id: "a2-s8-w2", en: "painting", fa: "نقاشی", examples: ["She enjoys painting in her free time.", "His painting was beautiful."] },
-      { id: "a2-s8-w3", en: "photography", fa: "عکاسی", examples: ["Photography is his passion.", "She takes a photography class."] },
-      { id: "a2-s8-w4", en: "gardening", fa: "باغبانی", examples: ["My father loves gardening.", "Gardening keeps her relaxed."] },
-      { id: "a2-s8-w5", en: "collecting", fa: "جمع‌آوری کردن", examples: ["He enjoys collecting old coins.", "Collecting stamps is a fun hobby."] },
-      { id: "a2-s8-w6", en: "cooking", fa: "آشپزی", examples: ["Cooking is a relaxing hobby for me.", "She learned cooking from her mother."] },
-      { id: "a2-s8-w7", en: "camping", fa: "کمپینگ", examples: ["We go camping every summer.", "Camping in the mountains is fun."] },
-      { id: "a2-s8-w8", en: "chess", fa: "شطرنج", examples: ["He plays chess every evening.", "Chess is a game of thinking."] },
-      { id: "a2-s8-w9", en: "puzzle", fa: "پازل", examples: ["She likes solving puzzles.", "This puzzle took me an hour."] },
-      { id: "a2-s8-w10", en: "free time", fa: "اوقات فراغت", examples: ["What do you do in your free time?", "I read books in my free time."] }
+      { id: "a2-s9-w1", en: "computer", fa: "کامپیوتر", examples: ["I work on my computer every day.", "The computer is very fast."] },
+      { id: "a2-s9-w2", en: "internet", fa: "اینترنت", examples: ["The internet is very slow today.", "I search for information on the internet."] },
+      { id: "a2-s9-w3", en: "password", fa: "رمز عبور", examples: ["I forgot my password.", "Choose a strong password."] },
+      { id: "a2-s9-w4", en: "screen", fa: "صفحه‌نمایش", examples: ["The screen is too bright.", "He looked at his phone screen."] },
+      { id: "a2-s9-w5", en: "charger", fa: "شارژر", examples: ["My phone charger is broken.", "Can I borrow your charger?"] },
+      { id: "a2-s9-w6", en: "battery", fa: "باتری", examples: ["My battery is almost dead.", "The battery lasts all day."] },
+      { id: "a2-s9-w7", en: "camera", fa: "دوربین", examples: ["She took a photo with her camera.", "This camera takes great pictures."] },
+      { id: "a2-s9-w8", en: "download", fa: "دانلود کردن", examples: ["I need to download this file.", "The app is downloading now."] },
+      { id: "a2-s9-w9", en: "app", fa: "برنامه (نرم‌افزار)", examples: ["I use a language app every day.", "She installed a new app."] },
+      { id: "a2-s9-w10", en: "wifi", fa: "وای‌فای", examples: ["The wifi is not working.", "What is the wifi password?"] }
     ]
   }
-  // Sets 9–30 go here with the same structure.
+  // Sets 10–30 go here with the same structure.
 ];
