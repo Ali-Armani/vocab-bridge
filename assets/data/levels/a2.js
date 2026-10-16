@@ -145,20 +145,20 @@ const vocabLevelA2 = [
     ]
   },
   {
-    id: "a2-set-14",
-    name: { en: "Set 14: Communication", fa: "مجموعه ۱۴: ارتباطات" },
+    id: "a2-set-15",
+    name: { en: "Set 15: Personality Adjectives", fa: "مجموعه ۱۵: صفت‌های شخصیتی" },
     words: [
-      { id: "a2-s14-w1", en: "call", fa: "تماس گرفتن", examples: ["I will call you tomorrow.", "She called her mother last night."] },
-      { id: "a2-s14-w2", en: "message", fa: "پیام", examples: ["I sent her a message.", "Did you read my message?"] },
-      { id: "a2-s14-w3", en: "email", fa: "ایمیل", examples: ["I will send you an email.", "Check your email, please."] },
-      { id: "a2-s14-w4", en: "reply", fa: "پاسخ دادن", examples: ["Please reply to my message.", "He replied quickly."] },
-      { id: "a2-s14-w5", en: "conversation", fa: "مکالمه", examples: ["We had a long conversation.", "The conversation was very interesting."] },
-      { id: "a2-s14-w6", en: "contact", fa: "تماس/اطلاعات ارتباطی", examples: ["Save his contact number.", "Please contact me tomorrow."] },
-      { id: "a2-s14-w7", en: "video call", fa: "تماس تصویری", examples: ["We had a video call yesterday.", "She video calls her family every week."] },
-      { id: "a2-s14-w8", en: "signal", fa: "آنتن‌دهی", examples: ["The signal is very weak here.", "I lost the signal in the tunnel."] },
-      { id: "a2-s14-w9", en: "letter", fa: "نامه", examples: ["She wrote a letter to her friend.", "I received a letter yesterday."] },
-      { id: "a2-s14-w10", en: "chat", fa: "چت کردن", examples: ["We chat every day online.", "Let's chat later."] }
+      { id: "a2-s15-w1", en: "kind", fa: "مهربان", examples: ["She is a very kind person.", "He was kind to the new student."] },
+      { id: "a2-s15-w2", en: "friendly", fa: "دوستانه", examples: ["Our neighbors are very friendly.", "He gave a friendly smile."] },
+      { id: "a2-s15-w3", en: "shy", fa: "خجالتی", examples: ["The boy is very shy.", "She felt shy at the party."] },
+      { id: "a2-s15-w4", en: "funny", fa: "بامزه", examples: ["He is a funny person.", "That movie was very funny."] },
+      { id: "a2-s15-w5", en: "honest", fa: "صادق", examples: ["She is always honest with me.", "Being honest is important."] },
+      { id: "a2-s15-w6", en: "lazy", fa: "تنبل", examples: ["He is too lazy to clean his room.", "Don't be lazy, help me."] },
+      { id: "a2-s15-w7", en: "hardworking", fa: "سخت‌کوش", examples: ["She is a hardworking student.", "He got the job because he is hardworking."] },
+      { id: "a2-s15-w8", en: "polite", fa: "مؤدب", examples: ["The children were very polite.", "Always be polite to your teachers."] },
+      { id: "a2-s15-w9", en: "brave", fa: "شجاع", examples: ["The firefighter was very brave.", "It was a brave decision to speak up."] },
+      { id: "a2-s15-w10", en: "patient", fa: "صبور", examples: ["She is very patient with children.", "You need to be patient."] }
     ]
   }
-  // Sets 15–30 go here with the same structure.
+  // Sets 16–30 go here with the same structure.
 ];
