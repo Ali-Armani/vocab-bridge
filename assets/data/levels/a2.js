@@ -177,6 +177,22 @@ const vocabLevelA2 = [
     ]
   },
   {
+    id: "a2-set-12",
+    name: { en: "Set 12: Travel & Holidays", fa: "مجموعه ۱۲: سفر و تعطیلات" },
+    words: [
+      { id: "a2-s12-w1", en: "passport", fa: "گذرنامه", examples: ["Don't forget your passport.", "I renewed my passport last month."] },
+      { id: "a2-s12-w2", en: "luggage", fa: "چمدان", examples: ["My luggage is very heavy.", "We checked our luggage at the airport."] },
+      { id: "a2-s12-w3", en: "vacation", fa: "تعطیلات", examples: ["We are on vacation this week.", "I need a vacation."] },
+      { id: "a2-s12-w4", en: "destination", fa: "مقصد", examples: ["Paris is our next destination.", "What is your travel destination?"] },
+      { id: "a2-s12-w5", en: "map", fa: "نقشه", examples: ["We used a map to find the hotel.", "Can you show me on the map?"] },
+      { id: "a2-s12-w6", en: "souvenir", fa: "سوغاتی", examples: ["I bought a souvenir for my sister.", "This shop sells nice souvenirs."] },
+      { id: "a2-s12-w7", en: "guide", fa: "راهنمای گردشگری", examples: ["Our guide showed us the old city.", "We hired a local guide."] },
+      { id: "a2-s12-w8", en: "airport", fa: "فرودگاه", examples: ["We arrived at the airport early.", "The airport was very crowded."] },
+      { id: "a2-s12-w9", en: "trip", fa: "سفر (کوتاه)", examples: ["We had a great trip to the coast.", "The trip took three hours."] },
+      { id: "a2-s12-w10", en: "abroad", fa: "خارج از کشور", examples: ["She studied abroad for a year.", "They traveled abroad last summer."] }
+    ]
+  },
+  {
     id: "a2-set-15",
     name: { en: "Set 15: Personality Adjectives", fa: "مجموعه ۱۵: صفت‌های شخصیتی" },
     words: [
