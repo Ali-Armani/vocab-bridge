@@ -200,7 +200,7 @@ function renderCard() {
   });
 
   cardCounter.textContent = uiText[currentLang].cardCounter(currentIndex + 1, currentWords.length);
-  cardInner.classList.remove("is-flipped");
+  resetCardFlip();
 
   const alreadyAnswered = answeredCards.has(currentIndex);
   correctBtn.disabled = alreadyAnswered;
