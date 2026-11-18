@@ -189,6 +189,11 @@ a:focus-visible {
   transform: rotateY(180deg);
 }
 
+/* Used to reset the card instantly (no flip animation) when changing cards */
+.card-inner.no-transition {
+  transition: none;
+}
+
 .card-face {
   position: absolute;
   inset: 0;
