@@ -174,6 +174,15 @@ document.getElementById("reviewMistakesBtn").addEventListener("click", () => {
   startSet(reviewWords);
 });
 
+// ---------- Reset card flip instantly ----------
+function resetCardFlip() {
+  cardInner.classList.add("no-transition");
+  cardInner.classList.remove("is-flipped");
+  // Force a reflow so the browser applies the change without animating
+  void cardInner.offsetWidth;
+  cardInner.classList.remove("no-transition");
+}
+
 // ---------- Render current card ----------
 function renderCard() {
   const word = currentWords[currentIndex];
